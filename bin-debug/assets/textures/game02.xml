@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:050749a9a14009c0f86fe2394729fb1a$ -->
+<TextureAtlas imagePath="game02.png">
+    <SubTexture name="animal" x="905" y="547" width="57" height="57" frameX="-4" frameY="-5" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="boom" x="765" y="328" width="180" height="55" frameX="-14" frameY="-5" frameWidth="200" frameHeight="67"/>
+    <SubTexture name="boomcommon" x="765" y="385" width="176" height="38" frameX="-15" frameY="-6" frameWidth="200" frameHeight="50"/>
+    <SubTexture name="boomcommon_01" x="996" y="68" width="22" height="22" frameX="-14" frameY="-14" frameWidth="50" frameHeight="50"/>
+    <SubTexture name="boomcommon_02" x="987" y="162" width="28" height="30" frameX="-11" frameY="-9" frameWidth="50" frameHeight="50"/>
+    <SubTexture name="boomcommon_03" x="335" y="684" width="38" height="38" frameX="-6" frameY="-6" frameWidth="50" frameHeight="50"/>
+    <SubTexture name="boomcommon_04" x="987" y="128" width="32" height="32" frameX="-9" frameY="-8" frameWidth="50" frameHeight="50"/>
+    <SubTexture name="boomnum0" x="765" y="210" width="220" height="28" frameX="0" frameY="0" frameWidth="220" frameHeight="30"/>
+    <SubTexture name="boomnum1" x="765" y="180" width="220" height="28" frameX="0" frameY="0" frameWidth="220" frameHeight="30"/>
+    <SubTexture name="boomnum2" x="765" y="150" width="220" height="28" frameX="0" frameY="0" frameWidth="220" frameHeight="30"/>
+    <SubTexture name="boomnum3" x="765" y="120" width="220" height="28" frameX="0" frameY="0" frameWidth="220" frameHeight="30"/>
+    <SubTexture name="boomnum4" x="765" y="90" width="220" height="28" frameX="0" frameY="0" frameWidth="220" frameHeight="30"/>
+    <SubTexture name="cat" x="927" y="425" width="59" height="61" frameX="-3" frameY="-1" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="dialogsuccess" x="2" y="2" width="428" height="471" frameX="-1" frameY="-2" frameWidth="434" frameHeight="473"/>
+    <SubTexture name="finaltry" x="2" y="764" width="306" height="85" frameX="-6" frameY="-6" frameWidth="320" frameHeight="97"/>
+    <SubTexture name="frameleftdown" x="947" y="351" width="72" height="72"/>
+    <SubTexture name="frameleftdownding1" x="987" y="92" width="34" height="34" frameX="0" frameY="-38" frameWidth="72" frameHeight="72"/>
+    <SubTexture name="frameleftshu" x="987" y="194" width="10" height="64" frameX="0" frameY="0" frameWidth="72" frameHeight="64"/>
+    <SubTexture name="frameleftup" x="949" y="277" width="72" height="72"/>
+    <SubTexture name="framerightshu" x="1001" y="2" width="10" height="64" frameX="-62" frameY="0" frameWidth="72" frameHeight="64"/>
+    <SubTexture name="frameshangheng" x="335" y="578" width="64" height="10" frameX="0" frameY="0" frameWidth="64" frameHeight="72"/>
+    <SubTexture name="framexiaheng" x="335" y="566" width="64" height="10" frameX="0" frameY="-62" frameWidth="64" frameHeight="72"/>
+    <SubTexture name="frameyoushang" x="949" y="240" width="36" height="35"/>
+    <SubTexture name="guide4" x="2" y="475" width="331" height="287" frameX="-1" frameY="-2" frameWidth="333" frameHeight="289"/>
+    <SubTexture name="guide5" x="432" y="291" width="331" height="287" frameX="-1" frameY="-2" frameWidth="333" frameHeight="289"/>
+    <SubTexture name="guide6" x="401" y="580" width="327" height="285" frameX="-2" frameY="-2" frameWidth="333" frameHeight="289"/>
+    <SubTexture name="guide7" x="432" y="2" width="331" height="287" frameX="-1" frameY="-2" frameWidth="333" frameHeight="289"/>
+    <SubTexture name="menu" x="284" y="867" width="124" height="51" frameX="-6" frameY="-5" frameWidth="138" frameHeight="61"/>
+    <SubTexture name="movebonus" x="730" y="687" width="286" height="66" frameX="-9" frameY="-9" frameWidth="300" frameHeight="82"/>
+    <SubTexture name="music01" x="335" y="637" width="52" height="45" frameX="-2" frameY="-3" frameWidth="58" frameHeight="51"/>
+    <SubTexture name="music02" x="335" y="590" width="52" height="45" frameX="-3" frameY="-3" frameWidth="58" frameHeight="51"/>
+    <SubTexture name="num3" x="765" y="305" width="181" height="21" frameX="-2" frameY="-1" frameWidth="187" frameHeight="23"/>
+    <SubTexture name="num7" x="335" y="475" width="93" height="27" frameX="-3" frameY="-4" frameWidth="99" frameHeight="33"/>
+    <SubTexture name="num9" x="730" y="755" width="276" height="34" frameX="-1" frameY="0" frameWidth="280" frameHeight="36"/>
+    <SubTexture name="pausegame1" x="974" y="525" width="41" height="35" frameX="0" frameY="0" frameWidth="43" frameHeight="37"/>
+    <SubTexture name="pausegame2" x="974" y="488" width="41" height="35" frameX="0" frameY="0" frameWidth="43" frameHeight="37"/>
+    <SubTexture name="playx" x="765" y="498" width="138" height="59" frameX="-5" frameY="-5" frameWidth="150" frameHeight="71"/>
+    <SubTexture name="prog1" x="765" y="472" width="151" height="13"/>
+    <SubTexture name="progmove" x="765" y="487" width="148" height="9"/>
+    <SubTexture name="resume" x="765" y="559" width="126" height="53" frameX="-6" frameY="-4" frameWidth="138" frameHeight="61"/>
+    <SubTexture name="retry" x="730" y="614" width="124" height="51" frameX="-7" frameY="-4" frameWidth="138" frameHeight="61"/>
+    <SubTexture name="sframe" x="964" y="586" width="52" height="52" frameX="-1" frameY="-1" frameWidth="54" frameHeight="54"/>
+    <SubTexture name="sound01" x="947" y="640" width="52" height="45" frameX="-2" frameY="-3" frameWidth="58" frameHeight="51"/>
+    <SubTexture name="sound02" x="893" y="606" width="52" height="45" frameX="-3" frameY="-3" frameWidth="58" frameHeight="51"/>
+    <SubTexture name="starbig" x="335" y="504" width="66" height="60" frameX="0" frameY="-1" frameWidth="66" frameHeight="64"/>
+    <SubTexture name="stoneboom" x="765" y="240" width="182" height="63" frameX="-14" frameY="-1" frameWidth="200" frameHeight="67"/>
+    <SubTexture name="sun" x="915" y="488" width="57" height="57" frameX="-3" frameY="-3" frameWidth="61" frameHeight="61"/>
+    <SubTexture name="thunderball" x="2" y="867" width="280" height="152" frameX="-6" frameY="-7" frameWidth="300" frameHeight="160"/>
+    <SubTexture name="xxx" x="964" y="562" width="57" height="22" frameX="-2" frameY="0" frameWidth="61" frameHeight="24"/>
+    <SubTexture name="zane" x="765" y="2" width="234" height="39" frameX="-4" frameY="-4" frameWidth="244" frameHeight="47"/>
+    <SubTexture name="zang" x="765" y="425" width="160" height="45" frameX="-4" frameY="-4" frameWidth="168" frameHeight="53"/>
+    <SubTexture name="zanp" x="765" y="43" width="229" height="45" frameX="-4" frameY="-4" frameWidth="237" frameHeight="53"/>
+</TextureAtlas>

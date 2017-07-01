@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:aae36f4d3da4b1ccbaed2e676b42ba6d$ -->
+<TextureAtlas imagePath="gameui.png">
+    <SubTexture name="bigstar" x="934" y="237" width="78" height="76"/>
+    <SubTexture name="clock" x="925" y="315" width="27" height="30"/>
+    <SubTexture name="close_btn" x="954" y="315" width="26" height="26" frameX="-11" frameY="-12" frameWidth="50" frameHeight="50"/>
+    <SubTexture name="continue_btn" x="832" y="185" width="100" height="107"/>
+    <SubTexture name="endPanel" x="2" y="450" width="534" height="587" frameX="0" frameY="0" frameWidth="534" frameHeight="591"/>
+    <SubTexture name="endscoreinfo" x="845" y="66" width="111" height="117" frameX="-4" frameY="-12" frameWidth="137" frameHeight="139"/>
+    <SubTexture name="failed" x="644" y="2" width="200" height="55"/>
+    <SubTexture name="followboom" x="958" y="169" width="58" height="56" frameX="-3" frameY="-3" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="font1_01" x="934" y="211" width="20" height="24" frameX="-2" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_02" x="1002" y="361" width="16" height="24" frameX="-3" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_03" x="1002" y="315" width="18" height="24" frameX="-4" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_04" x="982" y="315" width="18" height="24" frameX="-3" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_05" x="934" y="185" width="20" height="24" frameX="-2" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_06" x="1004" y="91" width="18" height="24" frameX="-3" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_07" x="1000" y="143" width="20" height="24" frameX="-2" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_08" x="1004" y="65" width="18" height="24" frameX="-5" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_09" x="1000" y="117" width="20" height="24" frameX="-2" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_10" x="1004" y="39" width="18" height="24" frameX="-3" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_11" x="968" y="343" width="12" height="24" frameX="-7" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_12" x="982" y="341" width="18" height="20" frameX="-3" frameY="-2" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_13" x="1002" y="341" width="18" height="18" frameX="-3" frameY="-3" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_14" x="958" y="151" width="14" height="10" frameX="-4" frameY="-9" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="font1_15" x="954" y="343" width="12" height="24" frameX="-6" frameY="0" frameWidth="24" frameHeight="24"/>
+    <SubTexture name="infopanel" x="2" y="124" width="640" height="102"/>
+    <SubTexture name="infopanel2" x="2" y="2" width="640" height="120"/>
+    <SubTexture name="missionbg" x="2" y="228" width="638" height="220"/>
+    <SubTexture name="next_btn" x="642" y="356" width="179" height="80"/>
+    <SubTexture name="pause_btn" x="958" y="66" width="44" height="35"/>
+    <SubTexture name="play2_btn" x="644" y="116" width="186" height="73"/>
+    <SubTexture name="progressBar" x="846" y="39" width="156" height="25" frameX="-8" frameY="-8" frameWidth="170" frameHeight="35"/>
+    <SubTexture name="progressBg" x="846" y="2" width="170" height="35"/>
+    <SubTexture name="replay2_btn" x="642" y="274" width="179" height="80"/>
+    <SubTexture name="retry_btn" x="823" y="294" width="100" height="106"/>
+    <SubTexture name="score" x="958" y="127" width="40" height="22"/>
+    <SubTexture name="showoff" x="644" y="191" width="181" height="81" frameX="-4" frameY="-4" frameWidth="193" frameHeight="95"/>
+    <SubTexture name="step" x="958" y="103" width="40" height="22"/>
+    <SubTexture name="success" x="644" y="59" width="199" height="55"/>
+</TextureAtlas>

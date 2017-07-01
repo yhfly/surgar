@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:7060b54a474cd33b08c41496fc2d66da$ -->
+<TextureAtlas imagePath="menu.png">
+    <SubTexture name="4399" x="334" y="167" width="157" height="46" frameX="-1" frameY="-6" frameWidth="161" frameHeight="60"/>
+    <SubTexture name="back_btn" x="104" y="680" width="100" height="105"/>
+    <SubTexture name="circle" x="2" y="304" width="265" height="267"/>
+    <SubTexture name="cloud1" x="269" y="440" width="214" height="79"/>
+    <SubTexture name="cloud2" x="269" y="353" width="236" height="85"/>
+    <SubTexture name="djfx" x="269" y="569" width="203" height="46" frameX="-2" frameY="-6" frameWidth="207" frameHeight="60"/>
+    <SubTexture name="more_btn" x="334" y="2" width="162" height="163"/>
+    <SubTexture name="musicoff_btn" x="2" y="680" width="100" height="105"/>
+    <SubTexture name="musicon_btn" x="206" y="617" width="100" height="105"/>
+    <SubTexture name="play_btn" x="334" y="215" width="135" height="136"/>
+    <SubTexture name="setting_btn" x="390" y="617" width="80" height="79"/>
+    <SubTexture name="setting_btn2" x="308" y="617" width="80" height="79"/>
+    <SubTexture name="soundoff_btn" x="104" y="573" width="100" height="105"/>
+    <SubTexture name="soundon_btn" x="2" y="573" width="100" height="105"/>
+    <SubTexture name="title" x="2" y="2" width="330" height="300"/>
+    <SubTexture name="zwsf" x="269" y="521" width="203" height="46" frameX="-2" frameY="-6" frameWidth="207" frameHeight="60"/>
+</TextureAtlas>

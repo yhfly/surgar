@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:c1c4597fe1d74fa58cd992b24cd1b59c$ -->
+<TextureAtlas imagePath="card.png">
+    <SubTexture name="bombtxt_01" x="496" y="85" width="11" height="15"/>
+    <SubTexture name="bombtxt_02" x="496" y="30" width="3" height="13" frameX="-3" frameY="-1" frameWidth="11" frameHeight="15"/>
+    <SubTexture name="bombtxt_03" x="394" y="150" width="9" height="13" frameX="-1" frameY="-1" frameWidth="11" frameHeight="15"/>
+    <SubTexture name="bombtxt_04" x="273" y="783" width="9" height="15" frameX="-1" frameY="0" frameWidth="11" frameHeight="15"/>
+    <SubTexture name="bombtxt_05" x="496" y="102" width="11" height="13" frameX="0" frameY="-1" frameWidth="11" frameHeight="15"/>
+    <SubTexture name="bombtxt_06" x="273" y="766" width="9" height="15" frameX="0" frameY="0" frameWidth="11" frameHeight="15"/>
+    <SubTexture name="bombtxt_07" x="415" y="756" width="9" height="15" frameX="-1" frameY="0" frameWidth="11" frameHeight="15"/>
+    <SubTexture name="bombtxt_08" x="415" y="739" width="9" height="15" frameX="-1" frameY="0" frameWidth="11" frameHeight="15"/>
+    <SubTexture name="bombtxt_09" x="489" y="292" width="9" height="15" frameX="-1" frameY="0" frameWidth="11" frameHeight="15"/>
+    <SubTexture name="bombtxt_10" x="496" y="68" width="11" height="15"/>
+    <SubTexture name="bonustime" x="2" y="2" width="424" height="79"/>
+    <SubTexture name="boom_timer" x="236" y="274" width="148" height="148" frameX="-1" frameY="-1" frameWidth="150" frameHeight="150"/>
+    <SubTexture name="brick1" x="428" y="98" width="66" height="66"/>
+    <SubTexture name="brick2" x="428" y="30" width="66" height="66"/>
+    <SubTexture name="candy0" x="2" y="407" width="65" height="65"/>
+    <SubTexture name="candy0a" x="383" y="485" width="65" height="65"/>
+    <SubTexture name="candy0b" x="293" y="424" width="65" height="65"/>
+    <SubTexture name="candy1" x="224" y="491" width="65" height="61"/>
+    <SubTexture name="candy1a" x="2" y="474" width="65" height="61"/>
+    <SubTexture name="candy1b" x="69" y="473" width="65" height="61"/>
+    <SubTexture name="candy2" x="226" y="424" width="65" height="65"/>
+    <SubTexture name="candy2a" x="136" y="340" width="65" height="65"/>
+    <SubTexture name="candy2b" x="69" y="340" width="65" height="65"/>
+    <SubTexture name="candy3" x="132" y="658" width="60" height="65"/>
+    <SubTexture name="candy3a" x="450" y="562" width="60" height="65"/>
+    <SubTexture name="candy3b" x="450" y="495" width="60" height="65"/>
+    <SubTexture name="candy4" x="2" y="340" width="65" height="65"/>
+    <SubTexture name="candy4a" x="386" y="418" width="65" height="65"/>
+    <SubTexture name="candy4b" x="386" y="351" width="65" height="65"/>
+    <SubTexture name="candy5" x="136" y="470" width="65" height="61"/>
+    <SubTexture name="candybomb0" x="66" y="659" width="59" height="63" frameX="-2" frameY="0" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="candybomb1" x="367" y="617" width="61" height="63" frameX="-2" frameY="-1" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="candybomb2" x="386" y="284" width="65" height="65"/>
+    <SubTexture name="candybomb3" x="282" y="620" width="61" height="63" frameX="-1" frameY="0" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="candybomb4" x="375" y="552" width="61" height="63" frameX="-2" frameY="-1" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="candyking" x="220" y="554" width="63" height="63" frameX="-2" frameY="-2" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="candytimer0" x="444" y="743" width="61" height="55" frameX="-2" frameY="-7" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="candytimer1" x="363" y="682" width="61" height="55" frameX="-2" frameY="-7" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="candytimer2" x="67" y="602" width="63" height="55" frameX="-2" frameY="-7" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="candytimer3" x="448" y="686" width="61" height="55" frameX="-2" frameY="-7" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="candytimer4" x="448" y="629" width="61" height="55" frameX="-2" frameY="-7" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="chuansong_01" x="278" y="685" width="51" height="19"/>
+    <SubTexture name="chuansong_02" x="194" y="682" width="52" height="19"/>
+    <SubTexture name="chuansong_03" x="194" y="703" width="51" height="19"/>
+    <SubTexture name="chuansong_04" x="247" y="706" width="51" height="15" frameX="0" frameY="-2" frameWidth="51" frameHeight="19"/>
+    <SubTexture name="chuansong_05" x="461" y="217" width="46" height="15" frameX="-6" frameY="-2" frameWidth="52" frameHeight="19"/>
+    <SubTexture name="chuansong_06" x="461" y="234" width="45" height="13" frameX="-6" frameY="-3" frameWidth="51" frameHeight="19"/>
+    <SubTexture name="cream1" x="218" y="619" width="62" height="61"/>
+    <SubTexture name="cream2" x="285" y="557" width="62" height="61"/>
+    <SubTexture name="cream3" x="2" y="620" width="62" height="61"/>
+    <SubTexture name="cube" x="69" y="536" width="64" height="64"/>
+    <SubTexture name="downP" x="2" y="829" width="33" height="40"/>
+    <SubTexture name="eat" x="394" y="217" width="65" height="65"/>
+    <SubTexture name="excellent" x="2" y="83" width="424" height="65"/>
+    <SubTexture name="fruit1" x="327" y="207" width="65" height="65"/>
+    <SubTexture name="fruit2" x="135" y="599" width="63" height="57" frameX="-2" frameY="-8" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="fruit3" x="136" y="407" width="65" height="61" frameX="0" frameY="-4" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="glevel_01" x="203" y="340" width="23" height="26" frameX="-3" frameY="-1" frameWidth="27" frameHeight="28"/>
+    <SubTexture name="glevel_02" x="326" y="752" width="15" height="26" frameX="-7" frameY="-1" frameWidth="27" frameHeight="28"/>
+    <SubTexture name="glevel_03" x="203" y="486" width="19" height="26" frameX="-4" frameY="-1" frameWidth="27" frameHeight="28"/>
+    <SubTexture name="glevel_04" x="203" y="428" width="19" height="28" frameX="-5" frameY="0" frameWidth="27" frameHeight="28"/>
+    <SubTexture name="glevel_05" x="360" y="482" width="21" height="26" frameX="-3" frameY="-1" frameWidth="27" frameHeight="28"/>
+    <SubTexture name="glevel_06" x="203" y="458" width="19" height="26" frameX="-3" frameY="-1" frameWidth="27" frameHeight="28"/>
+    <SubTexture name="glevel_07" x="360" y="424" width="21" height="28" frameX="-2" frameY="0" frameWidth="27" frameHeight="28"/>
+    <SubTexture name="glevel_08" x="360" y="454" width="21" height="26" frameX="-2" frameY="-1" frameWidth="27" frameHeight="28"/>
+    <SubTexture name="glevel_09" x="203" y="398" width="21" height="28" frameX="-2" frameY="0" frameWidth="27" frameHeight="28"/>
+    <SubTexture name="glevel_10" x="203" y="368" width="21" height="28" frameX="-2" frameY="0" frameWidth="27" frameHeight="28"/>
+    <SubTexture name="good" x="2" y="274" width="232" height="64"/>
+    <SubTexture name="ice1" x="58" y="724" width="54" height="54" frameX="0" frameY="0" frameWidth="56" frameHeight="56"/>
+    <SubTexture name="ice2" x="2" y="683" width="54" height="54" frameX="-1" frameY="0" frameWidth="56" frameHeight="56"/>
+    <SubTexture name="ironWire" x="496" y="117" width="10" height="57"/>
+    <SubTexture name="ironWire2" x="453" y="315" width="57" height="10"/>
+    <SubTexture name="levelimg" x="428" y="2" width="72" height="26"/>
+    <SubTexture name="lock" x="2" y="739" width="54" height="50" frameX="0" frameY="-1" frameWidth="54" frameHeight="54"/>
+    <SubTexture name="moveable" x="69" y="407" width="65" height="64"/>
+    <SubTexture name="nomatch" x="2" y="150" width="390" height="55"/>
+    <SubTexture name="num11" x="394" y="200" width="110" height="15"/>
+    <SubTexture name="numtip1_01" x="308" y="752" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip1_02" x="331" y="685" width="10" height="22" frameX="-4" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip1_03" x="290" y="752" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip1_04" x="426" y="768" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip1_05" x="426" y="744" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip1_06" x="397" y="739" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip1_07" x="379" y="739" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip1_08" x="343" y="750" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip1_09" x="361" y="739" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip1_10" x="37" y="839" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip1_11" x="284" y="776" width="16" height="16" frameX="-3" frameY="-3" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_01" x="76" y="818" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_02" x="266" y="682" width="10" height="22" frameX="-4" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_03" x="58" y="818" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_04" x="40" y="815" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_05" x="40" y="791" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_06" x="96" y="804" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_07" x="114" y="796" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_08" x="96" y="780" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_09" x="114" y="772" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_10" x="170" y="749" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip2_11" x="255" y="766" width="16" height="16" frameX="-3" frameY="-3" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_01" x="170" y="725" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_02" x="438" y="600" width="10" height="22" frameX="-4" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_03" x="114" y="748" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_04" x="343" y="726" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_05" x="343" y="702" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_06" x="248" y="682" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_07" x="114" y="724" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_08" x="194" y="658" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_09" x="426" y="720" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_10" x="426" y="696" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip3_11" x="237" y="766" width="16" height="16" frameX="-3" frameY="-3" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_01" x="345" y="678" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_02" x="438" y="576" width="10" height="22" frameX="-4" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_03" x="345" y="654" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_04" x="345" y="630" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_05" x="430" y="672" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_06" x="430" y="648" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_07" x="430" y="624" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_08" x="349" y="606" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_09" x="349" y="582" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_10" x="349" y="558" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip4_11" x="471" y="292" width="16" height="16" frameX="-3" frameY="-3" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_01" x="200" y="634" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_02" x="438" y="552" width="10" height="22" frameX="-4" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_03" x="357" y="534" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_04" x="357" y="510" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_05" x="200" y="610" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_06" x="202" y="586" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_07" x="202" y="562" width="16" height="22" frameX="-1" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_08" x="202" y="538" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_09" x="203" y="514" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_10" x="494" y="176" width="16" height="22" frameX="-2" frameY="0" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="numtip5_11" x="453" y="292" width="16" height="16" frameX="-3" frameY="-3" frameWidth="20" frameHeight="22"/>
+    <SubTexture name="prefect" x="2" y="207" width="323" height="65"/>
+    <SubTexture name="scoreaim" x="394" y="166" width="98" height="28"/>
+    <SubTexture name="sprite1" x="453" y="439" width="56" height="54" frameX="0" frameY="-1" frameWidth="56" frameHeight="56"/>
+    <SubTexture name="sprite2" x="453" y="383" width="56" height="54" frameX="0" frameY="-2" frameWidth="56" frameHeight="56"/>
+    <SubTexture name="spritemid" x="453" y="327" width="56" height="54" frameX="0" frameY="-1" frameWidth="56" frameHeight="56"/>
+    <SubTexture name="stone1" x="136" y="533" width="64" height="64"/>
+    <SubTexture name="stone2" x="291" y="491" width="64" height="64"/>
+    <SubTexture name="wenxiang" x="2" y="553" width="63" height="65" frameX="-1" frameY="0" frameWidth="65" frameHeight="65"/>
+    <SubTexture name="x_border_heng_shang" x="2" y="545" width="64" height="6"/>
+    <SubTexture name="x_border_heng_xia" x="2" y="537" width="64" height="6"/>
+    <SubTexture name="x_border_left_down" x="194" y="724" width="41" height="41"/>
+    <SubTexture name="x_border_left_down_x" x="2" y="791" width="36" height="36"/>
+    <SubTexture name="x_border_left_up" x="247" y="723" width="41" height="41"/>
+    <SubTexture name="x_border_left_up_x" x="58" y="780" width="36" height="36"/>
+    <SubTexture name="x_border_right_down" x="300" y="709" width="41" height="41"/>
+    <SubTexture name="x_border_right_down_x" x="132" y="763" width="36" height="36"/>
+    <SubTexture name="x_border_right_up" x="461" y="249" width="41" height="41"/>
+    <SubTexture name="x_border_right_up_x" x="132" y="725" width="36" height="36"/>
+    <SubTexture name="x_border_shu_you" x="504" y="249" width="6" height="64"/>
+    <SubTexture name="x_border_shu_zuo" x="502" y="2" width="6" height="64"/>
+</TextureAtlas>

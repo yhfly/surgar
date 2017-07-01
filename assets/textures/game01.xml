@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:ce5d58425114fad5b7a24367c1942912$ -->
+<TextureAtlas imagePath="game01.png">
+    <SubTexture name="astar1" x="998" y="272" width="23" height="23"/>
+    <SubTexture name="astar2" x="998" y="247" width="23" height="23"/>
+    <SubTexture name="bgcompleted" x="2" y="2" width="443" height="475"/>
+    <SubTexture name="bggrey" x="378" y="963" width="55" height="55"/>
+    <SubTexture name="bgpaused" x="445" y="486" width="438" height="482"/>
+    <SubTexture name="cha" x="995" y="304" width="27" height="29"/>
+    <SubTexture name="cheng" x="1003" y="2" width="18" height="18"/>
+    <SubTexture name="diagonal" x="1003" y="47" width="13" height="22"/>
+    <SubTexture name="diagonal1" x="1003" y="22" width="14" height="23"/>
+    <SubTexture name="dialogfail" x="447" y="2" width="442" height="482"/>
+    <SubTexture name="frameleftupding1" x="2" y="1067" width="72" height="72"/>
+    <SubTexture name="framerightdown" x="304" y="1037" width="72" height="72"/>
+    <SubTexture name="framerightdownding1" x="435" y="970" width="72" height="72"/>
+    <SubTexture name="framerightup1" x="304" y="963" width="72" height="72"/>
+    <SubTexture name="framerightupding" x="885" y="912" width="72" height="72"/>
+    <SubTexture name="framerightupding1" x="885" y="838" width="72" height="72"/>
+    <SubTexture name="framezuoshang" x="378" y="1020" width="36" height="35"/>
+    <SubTexture name="goalplate" x="2" y="479" width="441" height="482"/>
+    <SubTexture name="gou" x="150" y="1067" width="34" height="30"/>
+    <SubTexture name="hengshu1" x="891" y="356" width="100" height="480"/>
+    <SubTexture name="ice1" x="959" y="959" width="56" height="56"/>
+    <SubTexture name="ice2" x="959" y="901" width="56" height="56"/>
+    <SubTexture name="makespxia" x="2" y="1015" width="300" height="50"/>
+    <SubTexture name="musicOff_btn" x="891" y="137" width="110" height="43"/>
+    <SubTexture name="musicOn_btn" x="891" y="92" width="110" height="43"/>
+    <SubTexture name="next" x="891" y="304" width="102" height="50"/>
+    <SubTexture name="nextx" x="891" y="247" width="105" height="55"/>
+    <SubTexture name="prog2" x="995" y="335" width="27" height="9"/>
+    <SubTexture name="prog3" x="1003" y="71" width="8" height="15"/>
+    <SubTexture name="soundOff_btn" x="891" y="47" width="110" height="43"/>
+    <SubTexture name="soundOn_btn" x="891" y="2" width="110" height="43"/>
+    <SubTexture name="sun" x="959" y="838" width="61" height="61"/>
+    <SubTexture name="target" x="76" y="1067" width="72" height="26"/>
+    <SubTexture name="txtcollect" x="891" y="182" width="108" height="63"/>
+    <SubTexture name="wanmei" x="2" y="963" width="300" height="50"/>
+</TextureAtlas>
