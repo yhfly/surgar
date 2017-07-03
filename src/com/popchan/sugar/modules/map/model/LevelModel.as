@@ -15,7 +15,7 @@ package com.popchan.sugar.modules.map.model
 
         public function LevelModel()
         {
-            levelsMap = {};
+            levelsMap = {}
             super();
         }
 

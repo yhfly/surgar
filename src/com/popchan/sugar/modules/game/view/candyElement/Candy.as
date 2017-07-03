@@ -1,5 +1,5 @@
 ﻿
-package com.popchan.sugar.modules.game.view
+package com.popchan.sugar.modules.game.view.candyElement
 {
     import com.popchan.framework.core.Core;
     import com.popchan.framework.core.MsgDispatcher;
@@ -19,6 +19,7 @@ package com.popchan.sugar.modules.game.view
     import starling.display.Image;
     import starling.display.TextSprite;
     import starling.textures.Texture;
+    import com.popchan.sugar.modules.game.view.Element;
 
 	/**
 	 * 糖果显示对象 

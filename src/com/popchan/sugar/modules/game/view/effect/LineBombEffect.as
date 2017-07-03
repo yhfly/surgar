@@ -104,7 +104,7 @@ package com.popchan.sugar.modules.game.view.effect
                     "time":t,
                     "onComplete":this.onActionEnd
                 });
-            };
+            }
         }
 
         private function onActionEnd():void

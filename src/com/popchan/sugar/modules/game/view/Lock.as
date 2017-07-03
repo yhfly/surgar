@@ -39,14 +39,14 @@ package com.popchan.sugar.modules.game.view
             if (this.col >= 4)
             {
                 _local1 = 1;
-            };
+            }
             this._vx = 3;
             this._vr = 0.1;
             if (_local1 == -1)
             {
                 this._vx = -3;
                 this._vr = -0.1;
-            };
+            }
             this._count = 0;
             this._vy = (Math.random() * -4);
             Core.timerManager.add(this, this.update, 16);
@@ -64,7 +64,7 @@ package com.popchan.sugar.modules.game.view
                 Core.timerManager.remove(this, this.update);
                 pool.put(this);
                 this.removeFromParent();
-            };
+            }
         }
 
 

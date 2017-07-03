@@ -19,7 +19,7 @@ package com.popchan.sugar.modules.map
             if (_instance == null)
             {
                 _instance = new (MapModule)();
-            };
+            }
             return (_instance);
         }
 

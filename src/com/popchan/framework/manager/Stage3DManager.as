@@ -33,9 +33,9 @@ package com.popchan.framework.manager
                 if (_arg2)
                 {
                     this._resizeRect = _arg2;
-                };
+                }
                 this.resize();
-            };
+            }
         }
 
         private function onResize(_arg1:Event):void
@@ -60,8 +60,8 @@ package com.popchan.framework.manager
                 else
                 {
                     _local1 = this.stageWidth;
-                };
-            };
+                }
+            }
             if (this.stageHeight >= this._resizeRect.height)
             {
                 _local2 = this._resizeRect.height;
@@ -75,16 +75,16 @@ package com.popchan.framework.manager
                 else
                 {
                     _local2 = this.stageHeight;
-                };
-            };
+                }
+            }
             if (this._canvasRect.width != _local1)
             {
                 this._canvasRect.width = _local1;
-            };
+            }
             if (this._canvasRect.height != _local2)
             {
                 this._canvasRect.height = _local2;
-            };
+            }
             if (this.stageWidth > _local1)
             {
                 this._canvasRect.x = ((this.stageWidth - _local1) >> 1);
@@ -92,7 +92,7 @@ package com.popchan.framework.manager
             else
             {
                 this._canvasRect.x = 0;
-            };
+            }
             if (this.stageHeight > _local2)
             {
                 this._canvasRect.y = ((this.stageHeight - _local2) >> 1);
@@ -100,7 +100,7 @@ package com.popchan.framework.manager
             else
             {
                 this._canvasRect.y = 0;
-            };
+            }
             Starling.current.viewPort.x = this._canvasRect.x;
             Starling.current.viewPort.y = this._canvasRect.y;
             Starling.current.viewPort.width = Core.stage3DManager.canvasWidth;

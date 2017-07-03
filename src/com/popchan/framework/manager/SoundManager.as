@@ -39,7 +39,7 @@ package com.popchan.framework.manager
             if (_instance == null)
             {
                 _instance = new (SoundManager)();
-            };
+            }
             return (_instance);
         }
 
@@ -69,27 +69,27 @@ package com.popchan.framework.manager
                 if (this.isMusicMute)
                 {
                     this.soundTransform.volume = 0;
-                };
+                }
                 if (this.musicChannel != null)
                 {
                     this.musicChannel.stop();
-                };
+                }
                 this.musicChannel = _local7.play(_arg3, _arg4);
                 if (this.musicChannel)
                 {
                     this.musicChannel.soundTransform = this.soundTransform;
-                };
+                }
                 if (_arg4 > 1)
                 {
                     this._curSoundName = _arg1;
-                };
+                }
             }
             else
             {
                 if (this.isSoundMute)
                 {
                     this.soundTransform.volume = 0;
-                };
+                }
                 if (_arg6)
                 {
                     if (!this.soundEffectsChannels[_arg1])
@@ -99,8 +99,8 @@ package com.popchan.framework.manager
                         {
                             (this.soundEffectsChannels[_arg1] as SoundChannel).addEventListener(Event.SOUND_COMPLETE, this.onSoundCmp);
                             this.soundEffectsChannels[_arg1].soundTransform = this.soundTransform;
-                        };
-                    };
+                        }
+                    }
                 }
                 else
                 {
@@ -108,9 +108,9 @@ package com.popchan.framework.manager
                     if (this.soundEffectsChannels[_arg1])
                     {
                         this.soundEffectsChannels[_arg1].soundTransform = this.soundTransform;
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function onSoundCmp(_arg1:Event):void
@@ -125,8 +125,8 @@ package com.popchan.framework.manager
                 {
                     this.soundEffectsChannels[_local3] = null;
                     break;
-                };
-            };
+                }
+            }
         }
 
         public function stopSound(_arg1:String, _arg2:Boolean=false):void
@@ -137,7 +137,7 @@ package com.popchan.framework.manager
                 {
                     this.musicChannel.stop();
                     this._curSoundName = null;
-                };
+                }
             }
             else
             {
@@ -147,10 +147,10 @@ package com.popchan.framework.manager
                     if ((this.soundEffectsChannels[_arg1] as SoundChannel).hasEventListener(Event.SOUND_COMPLETE))
                     {
                         (this.soundEffectsChannels[_arg1] as SoundChannel).removeEventListener(Event.SOUND_COMPLETE, this.onSoundCmp);
-                    };
+                    }
                     this.soundEffectsChannels[_arg1] = null;
-                };
-            };
+                }
+            }
         }
 
         public function stopAllSound():void
@@ -160,7 +160,7 @@ package com.popchan.framework.manager
             {
                 this.musicChannel.stop();
                 this._curSoundName = null;
-            };
+            }
             for (_local1 in this.soundEffectsChannels)
             {
                 if (this.soundEffectsChannels[_local1])
@@ -169,10 +169,10 @@ package com.popchan.framework.manager
                     if ((this.soundEffectsChannels[_local1] as SoundChannel).hasEventListener(Event.SOUND_COMPLETE))
                     {
                         (this.soundEffectsChannels[_local1] as SoundChannel).removeEventListener(Event.SOUND_COMPLETE, this.onSoundCmp);
-                    };
+                    }
                     this.soundEffectsChannels[_local1] = null;
-                };
-            };
+                }
+            }
         }
 
         public function muteAllSound(_arg1:Boolean):void
@@ -188,7 +188,7 @@ package com.popchan.framework.manager
                 this.muteSoundTransform.volume = 1;
                 SoundMixer.soundTransform = this.muteSoundTransform;
                 this.isMute = false;
-            };
+            }
         }
 
         public function muteSoundEffect(_arg1:Boolean):void
@@ -203,14 +203,14 @@ package com.popchan.framework.manager
             {
                 this.soundTransform.volume = 1;
                 this.isSoundMute = false;
-            };
+            }
             for each (_local2 in this.soundEffectsChannels)
             {
                 if (_local2)
                 {
                     _local2.soundTransform = this.soundTransform;
-                };
-            };
+                }
+            }
         }
 
         public function muteMusic(_arg1:Boolean):void
@@ -222,7 +222,7 @@ package com.popchan.framework.manager
                 if (this.musicChannel)
                 {
                     this.musicChannel.soundTransform = this.musicTransform;
-                };
+                }
             }
             else
             {
@@ -231,8 +231,8 @@ package com.popchan.framework.manager
                 if (this.musicChannel)
                 {
                     this.musicChannel.soundTransform = this.musicTransform;
-                };
-            };
+                }
+            }
         }
 
         public function fadeIn(name:String, isMusic:Boolean=false, time:Number=1):void
@@ -243,7 +243,7 @@ package com.popchan.framework.manager
                 if (this.isMusicMute)
                 {
                     return;
-                };
+                }
                 this.soundTransform.volume = 0;
                 this.musicTransform = this.soundTransform;
                 Tweener.addTween(this.soundTransform, {
@@ -262,7 +262,7 @@ package com.popchan.framework.manager
                     if (this.isSoundMute)
                     {
                         return;
-                    };
+                    }
                     this.soundTransform.volume = 0;
                     this.soundEffectsChannels[name].soundTransform = this.soundTransform;
                     Tweener.addTween(this.soundTransform, {
@@ -273,8 +273,8 @@ package com.popchan.framework.manager
                             soundEffectsChannels[name].soundTransform = soundTransform;
                         }
                     });
-                };
-            };
+                }
+            }
         }
 
         public function fadeOut(name:String, isMusic:Boolean=false, time:Number=1):void
@@ -312,8 +312,8 @@ package com.popchan.framework.manager
                             soundEffectsChannels[name].soundTransform = soundTransform;
                         }
                     });
-                };
-            };
+                }
+            }
         }
 
 

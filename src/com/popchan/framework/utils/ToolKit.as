@@ -27,7 +27,7 @@ package com.popchan.framework.utils
             {
                 _local7.pivotX = (_local7.width >> 1);
                 _local7.pivotY = (_local7.height >> 1);
-            };
+            }
             return (_local7);
         }
 
@@ -72,7 +72,7 @@ package com.popchan.framework.utils
             if (trigFunc != null)
             {
                 button.addEventListener(Event.TRIGGERED, trigFunc);
-            };
+            }
             continer.addChild(button);
             return button;
         }

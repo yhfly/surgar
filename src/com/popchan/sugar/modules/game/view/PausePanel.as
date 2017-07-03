@@ -87,7 +87,7 @@ package com.popchan.sugar.modules.game.view
                     "transition":"easeOutBack"
                 });
                 _local2++;
-            };
+            }
         }
 
         override public function close():void
@@ -149,13 +149,13 @@ package com.popchan.sugar.modules.game.view
                                         Model.settingModel.music = true;
                                         SoundManager.instance.muteMusic(false);
                                         this.setMusic();
-                                    };
-                                };
-                            };
-                        };
-                    };
-                };
-            };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         public function setSound():void

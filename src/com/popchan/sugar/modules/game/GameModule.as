@@ -19,7 +19,7 @@ package com.popchan.sugar.modules.game
             if (_instance == null)
             {
                 _instance = new (GameModule)();
-            };
+            }
             return (_instance);
         }
 

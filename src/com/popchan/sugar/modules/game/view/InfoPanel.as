@@ -78,7 +78,7 @@ package com.popchan.sugar.modules.game.view
             if (_arg1.type == AimType.SCORE)
             {
                 return;
-            };
+            }
             this.aimLabelDict[_arg1.type].text = ((_arg1.orgValue - _arg1.value) + "");
         }
 
@@ -110,14 +110,14 @@ package com.popchan.sugar.modules.game.view
                 _local2.removeFromParent(true);
                 _local2 = null;
                 delete this.aimIconDict[_local3];
-            };
+            }
             for (_local3 in this.aimLabelDict)
             {
                 _local6 = this.aimLabelDict[_local3];
                 _local6.removeFromParent(true);
                 _local6 = null;
                 delete this.aimLabelDict[_local3];
-            };
+            }
             if (_arg1.mode == GameMode.NORMAL)
             {
                 this.stepLabel.visible = true;
@@ -135,8 +135,8 @@ package com.popchan.sugar.modules.game.view
                     Model.gameModel.time = _arg1.step;
                     this.stepIcon.visible = false;
                     this.timeIcon.visible = true;
-                };
-            };
+                }
+            }
             var _local4:int;
             if (_arg1.aim.length == 1)
             {
@@ -153,9 +153,9 @@ package com.popchan.sugar.modules.game.view
                     if (_arg1.aim.length == 3)
                     {
                         _local4 = 200;
-                    };
-                };
-            };
+                    }
+                }
+            }
             var _local5:int;
             while (_local5 < _arg1.aim.length)
             {
@@ -173,7 +173,7 @@ package com.popchan.sugar.modules.game.view
                 else
                 {
                     _local2.pivotX = _local2.width;
-                };
+                }
                 _local2.x = ((_local4 + (_local5 * 80)) + 30);
                 _local2.y = 31;
                 this.addChild(_local2);
@@ -185,7 +185,7 @@ package com.popchan.sugar.modules.game.view
                 _local10.y = 23;
                 this.aimLabelDict[_local8] = _local10;
                 _local5++;
-            };
+            }
         }
 
         public function getIconPos(_arg1:int):Point
@@ -193,7 +193,7 @@ package com.popchan.sugar.modules.game.view
             if (this.aimIconDict[_arg1] != undefined)
             {
                 return (new Point(this.aimIconDict[_arg1].x, this.aimIconDict[_arg1].y));
-            };
+            }
             return (null);
         }
 
@@ -213,14 +213,14 @@ package com.popchan.sugar.modules.game.view
                 _local2.removeFromParent(true);
                 _local2 = null;
                 delete this.aimIconDict[_local1];
-            };
+            }
             for (_local1 in this.aimLabelDict)
             {
                 _local3 = this.aimLabelDict[_local1];
                 _local3.removeFromParent(true);
                 _local3 = null;
                 delete this.aimLabelDict[_local1];
-            };
+            }
         }
 
 

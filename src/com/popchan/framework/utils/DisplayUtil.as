@@ -38,14 +38,14 @@ package com.popchan.framework.utils
                 else
                 {
                     _local4.gotoAndStop(1);
-                };
+                }
                 _local4 = null;
-            };
+            }
             var _local5:int = (_arg1.numChildren - 1);
             if (_local5 < 0)
             {
                 return;
-            };
+            }
             var _local6:int = _local5;
             while (_local6 >= 0)
             {
@@ -53,9 +53,9 @@ package com.popchan.framework.utils
                 if (_local3 != null)
                 {
                     stopAllMovieClip(_local3, _arg2);
-                };
+                }
                 _local6--;
-            };
+            }
         }
 
         public static function playAllMovieClip(_arg1:DisplayObjectContainer):void
@@ -66,12 +66,12 @@ package com.popchan.framework.utils
             {
                 _local3.gotoAndPlay(1);
                 _local3 = null;
-            };
+            }
             var _local4:int = (_arg1.numChildren - 1);
             if (_local4 < 0)
             {
                 return;
-            };
+            }
             var _local5:int = _local4;
             while (_local5 >= 0)
             {
@@ -79,9 +79,9 @@ package com.popchan.framework.utils
                 if (_local2 != null)
                 {
                     playAllMovieClip(_local2);
-                };
+                }
                 _local5--;
-            };
+            }
         }
 
         public static function removeAllChild(_arg1:DisplayObjectContainer):void
@@ -90,7 +90,7 @@ package com.popchan.framework.utils
             if (_arg1 == null)
             {
                 return;
-            };
+            }
             while (_arg1.numChildren > 0)
             {
                 _local2 = (_arg1.removeChildAt(0) as DisplayObjectContainer);
@@ -98,8 +98,8 @@ package com.popchan.framework.utils
                 {
                     stopAllMovieClip(_local2);
                     _local2 = null;
-                };
-            };
+                }
+            }
         }
 
         public static function removeForParent(_arg1:DisplayObject, _arg2:Boolean=false):void
@@ -109,15 +109,15 @@ package com.popchan.framework.utils
             if (_arg1 == null)
             {
                 return;
-            };
+            }
             if (_arg1.parent == null)
             {
                 return;
-            };
+            }
             if (!_arg1.parent.contains(_arg1))
             {
                 return;
-            };
+            }
             if (_arg2)
             {
                 _local3 = (_arg1 as DisplayObjectContainer);
@@ -125,16 +125,16 @@ package com.popchan.framework.utils
                 {
                     stopAllMovieClip(_local3, 1);
                     _local3 = null;
-                };
+                }
                 _local4 = (_arg1 as Bitmap);
                 if (_local4)
                 {
                     if (_local4.bitmapData)
                     {
                         _local4.bitmapData.dispose();
-                    };
-                };
-            };
+                    }
+                }
+            }
             _arg1.parent.removeChild(_arg1);
         }
 
@@ -143,23 +143,23 @@ package com.popchan.framework.utils
             if (_arg1 == null)
             {
                 return;
-            };
+            }
             if (_arg1.parent == null)
             {
                 return;
-            };
+            }
             if (!_arg1.parent.contains(_arg1))
             {
                 return;
-            };
+            }
             if (_arg2)
             {
                 if (_arg1.bitmapData)
                 {
                     _arg1.bitmapData.dispose();
-                };
+                }
                 _arg1 = null;
-            };
+            }
         }
 
         public static function disposeBitamp(_arg1:Bitmap):void
@@ -167,7 +167,7 @@ package com.popchan.framework.utils
             if (((_arg1) && (_arg1.bitmapData)))
             {
                 _arg1.bitmapData.dispose();
-            };
+            }
             _arg1 = null;
         }
 
@@ -176,7 +176,7 @@ package com.popchan.framework.utils
             if (_arg1.parent == null)
             {
                 return false;
-            };
+            }
             return (_arg1.parent.contains(_arg1));
         }
 
@@ -185,7 +185,7 @@ package com.popchan.framework.utils
             if (_arg3 == null)
             {
                 _arg3 = new Point(0, 0);
-            };
+            }
             _arg3 = _arg1.localToGlobal(_arg3);
             return (_arg2.globalToLocal(_arg3));
         }
@@ -217,7 +217,7 @@ package com.popchan.framework.utils
             {
                 _arg1.height = _arg2;
                 _arg1.scaleX = _arg1.scaleY;
-            };
+            }
         }
 
         public static function copyDisplayAsBmp(_arg1:DisplayObject, _arg2:Boolean=true):Bitmap
@@ -232,11 +232,11 @@ package com.popchan.framework.utils
             if (_local3 < 0)
             {
                 _arg1.scaleX = -(_arg1.scaleX);
-            };
+            }
             if (_local4 < 0)
             {
                 _arg1.scaleY = -(_arg1.scaleY);
-            };
+            }
             _local7.createBox(_arg1.scaleX, _arg1.scaleY, 0, (-(_local6.x) * _arg1.scaleX), (-(_local6.y) * _arg1.scaleY));
             _local5.draw(_arg1, _local7);
             _arg1.scaleX = _local3;
@@ -245,11 +245,11 @@ package com.popchan.framework.utils
             if (_local3 < 0)
             {
                 _local8.scaleX = -1;
-            };
+            }
             if (_local4 < 0)
             {
                 _local8.scaleY = -1;
-            };
+            }
             _local8.x = (_local6.x * _arg1.scaleX);
             _local8.y = (_local6.y * _arg1.scaleY);
             return (_local8);
@@ -264,7 +264,7 @@ package com.popchan.framework.utils
                 if (target.hasEventListener(_arg1))
                 {
                     return true;
-                };
+                }
                 return false;
             });
             if (!b)
@@ -272,8 +272,8 @@ package com.popchan.framework.utils
                 if (target.name.indexOf("instance") != -1)
                 {
                     target.mouseEnabled = false;
-                };
-            };
+                }
+            }
             var container:DisplayObjectContainer = (target as DisplayObjectContainer);
             if (container)
             {
@@ -284,10 +284,10 @@ package com.popchan.framework.utils
                     if (child)
                     {
                         mouseEnabledAll(child);
-                    };
+                    }
                     i--;
-                };
-            };
+                }
+            }
         }
 
         public static function makeRectangle(_arg1:Number, _arg2:Number, _arg3:uint=0, _arg4:uint=0, _arg5:Number=1):Sprite
@@ -333,9 +333,9 @@ package com.popchan.framework.utils
                     _local6.y = (_local4 * _local8);
                     _local9.push(_local6);
                     _local4++;
-                };
+                }
                 _local10++;
-            };
+            }
             return (_local9);
         }
 
@@ -350,13 +350,13 @@ package com.popchan.framework.utils
             {
                 _arg1 = _arg3.width;
                 _local7 = 1;
-            };
+            }
             var _local8:uint = Math.ceil((_arg3.height / _arg2));
             if (_arg2 == 0)
             {
                 _arg2 = _arg3.height;
                 _local8 = 1;
-            };
+            }
             var _local9:Array = new Array();
             while (_local10 < _local7)
             {
@@ -370,9 +370,9 @@ package com.popchan.framework.utils
                     _local6.y = _local4;
                     _local9.push(_local6);
                     _local4++;
-                };
+                }
                 _local10++;
-            };
+            }
             return (_local9);
         }
 
@@ -393,7 +393,7 @@ package com.popchan.framework.utils
                 _local7 = _local11;
                 _local10.push(new Point(uint(_local5), uint(_local6)));
                 _local11 = (_local11 + _local8);
-            };
+            }
             _local10.push(new Point(uint(_arg2.x), uint(_arg2.y)));
             return (_local10);
         }
@@ -411,11 +411,11 @@ package com.popchan.framework.utils
             if (_arg1.x < _arg2.x)
             {
                 _local4 = true;
-            };
+            }
             if (_arg1.y < _arg2.y)
             {
                 _local5 = true;
-            };
+            }
             while (_local11 < _arg3)
             {
                 if (_local4)
@@ -425,7 +425,7 @@ package com.popchan.framework.utils
                 else
                 {
                     _local6 = (_arg1.x - ((_local11 / _arg3) * _local9));
-                };
+                }
                 if (_local5)
                 {
                     _local7 = (_arg1.y + ((_local11 / _arg3) * _local10));
@@ -433,10 +433,10 @@ package com.popchan.framework.utils
                 else
                 {
                     _local7 = (_arg1.y - ((_local11 / _arg3) * _local10));
-                };
+                }
                 _local8.push(new Point(uint(_local6), uint(_local7)));
                 _local11++;
-            };
+            }
             _local8.push(new Point(uint(_arg2.x), uint(_arg2.y)));
             return (_local8);
         }
@@ -463,7 +463,7 @@ package com.popchan.framework.utils
                 _arg1.moveTo(Math.round(_local14), Math.round(_local15));
                 _arg1.lineTo(Math.round(_local16), Math.round(_local17));
                 _local13++;
-            };
+            }
         }
 
         public static function drawSector(_arg1:Sprite, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number, _arg7:Number, _arg8:Number, _arg9:Number):void
@@ -481,7 +481,7 @@ package com.popchan.framework.utils
             {
                 _arg1.graphics.lineTo((_arg5 + (_arg4 * Math.cos(_local11))), (_arg6 + (_arg4 * Math.sin(_local11))));
                 _local11 = (_local11 + Math.min(_arg7, (_arg3 - _local11)));
-            };
+            }
             _arg1.graphics.lineTo((_arg5 + (_arg4 * Math.cos(_arg3))), (_arg6 + (_arg4 * Math.sin(_arg3))));
             _arg1.graphics.lineTo(_arg5, _arg6);
         }
@@ -491,11 +491,11 @@ package com.popchan.framework.utils
             if (!_arg2)
             {
                 _arg2 = _arg1.parent;
-            };
+            }
             if (!_arg1.parent)
             {
                 return false;
-            };
+            }
             var _local3:BitmapData = new BitmapData(_arg1.width, _arg1.height, true, 0);
             var _local4:Matrix = new Matrix();
             var _local5:Rectangle = _arg1.getBounds(_arg2);
@@ -528,7 +528,7 @@ package com.popchan.framework.utils
                 _local3.redOffset = 0;
                 _local3.greenOffset = 0;
                 _local3.blueOffset = 0;
-            };
+            }
             _arg1.transform.colorTransform = _local3;
             _arg1.filters = _local4;
         }
@@ -594,13 +594,13 @@ package com.popchan.framework.utils
                 catch(e:Error)
                 {
                     child = null;
-                };
+                }
                 if (((child) && (child.numChildren)))
                 {
                     this.getTotalChildNumber(child);
-                };
+                }
                 len = (len - 1);
-            };
+            }
         }
 
         public function getTotalChildren(_arg1:DisplayObjectContainer):int
@@ -623,9 +623,9 @@ package com.popchan.framework.utils
                     }
                     catch(e:Error)
                     {
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (_local2);
         }
 

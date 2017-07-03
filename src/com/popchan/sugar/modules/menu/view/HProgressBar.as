@@ -22,7 +22,7 @@ package com.popchan.sugar.modules.menu.view
             {
                 _local7 = new Image(_arg1);
                 addChild(_local7);
-            };
+            }
             this.mBar = new Sprite();
             var _local6:Image = new Image(_arg2);
             this.mBar.x = _arg3;
@@ -35,7 +35,7 @@ package com.popchan.sugar.modules.menu.view
             else
             {
                 addChild(this.mBar);
-            };
+            }
             this.rect = new Rectangle(0, 0, _arg2.width, (_arg2.height + 50));
         }
 
@@ -49,7 +49,7 @@ package com.popchan.sugar.modules.menu.view
             if (_arg1 > 1)
             {
                 _arg1 = 1;
-            };
+            }
             this.rect.x = (((_arg1 - 1) * this.rect.width) + 0);
             this.mBar.clipRect = this.rect;
         }

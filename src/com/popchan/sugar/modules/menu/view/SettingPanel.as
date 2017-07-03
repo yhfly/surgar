@@ -85,7 +85,7 @@ package com.popchan.sugar.modules.menu.view
             if (_local2)
             {
                 this.hide();
-            };
+            }
         }
 
         private function hideQuit():void
@@ -107,7 +107,7 @@ package com.popchan.sugar.modules.menu.view
                 else
                 {
                     this.hide();
-                };
+                }
             }
             else
             {
@@ -148,14 +148,14 @@ package com.popchan.sugar.modules.menu.view
 //                                        if (SugarCrush.serviceHold)
 //                                        {
 //                                            SugarCrush.serviceHold.showGameList();
-//                                        };
-                                    };
-                                };
-                            };
-                        };
-                    };
-                };
-            };
+//                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         public function show():void
@@ -189,7 +189,7 @@ package com.popchan.sugar.modules.menu.view
             if (_arg1 == 1)
             {
                 this.hideQuit();
-            };
+            }
         }
 
         public function setSound(_arg1:Boolean):void

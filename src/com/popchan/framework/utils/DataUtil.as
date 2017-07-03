@@ -15,7 +15,7 @@ package com.popchan.framework.utils
 
         public static var id:String = "fdfd";
         private static var _shared:SharedObject;
-        private static var _data:Object = {};
+        private static var _data:Object = { };
         public static var prefix:String = "FlashPunk";
 
 
@@ -23,7 +23,7 @@ package com.popchan.framework.utils
         {
             var _local3:String;
             var _local2:Object = loadData(dataId);
-            _data = {};
+            _data = { };
             for (_local3 in _local2)
             {
                 _data[_local3] = _local2[_local3];

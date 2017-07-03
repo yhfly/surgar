@@ -75,14 +75,14 @@ package com.popchan.sugar.modules.game.view
                 icon.removeFromParent(true);
                 icon = null;
                 delete this.aimIconDict[key];
-            };
+            }
             for (key in this.aimLabelDict)
             {
                 label = this.aimLabelDict[key];
                 label.removeFromParent(true);
                 label = null;
                 delete this.aimLabelDict[key];
-            };
+            }
             posX = 0;
             if (info.aim.length == 1)
             {
@@ -99,9 +99,9 @@ package com.popchan.sugar.modules.game.view
                     if (info.aim.length == 3)
                     {
                         posX = 200;
-                    };
-                };
-            };
+                    }
+                }
+            }
             var i:int;
             while (i < info.aim.length)
             {
@@ -118,7 +118,7 @@ package com.popchan.sugar.modules.game.view
                 else
                 {
                     icon.pivotX = icon.width;
-                };
+                }
                 icon.x = (posX + (i * 80));
                 icon.y = 117;
                 this.addChild(icon);
@@ -130,7 +130,7 @@ package com.popchan.sugar.modules.game.view
                 aimLabel.y = 105;
                 this.aimLabelDict[aimType] = aimLabel;
                 i = (i + 1);
-            };
+            }
             this.x = 0;
             this.y = -200;
             target = this;

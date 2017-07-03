@@ -38,7 +38,7 @@ package com.popchan.framework.utils
                 {
                     _local3[_local5] = _arg1.readUnsignedByte();
                     _local5++;
-                };
+                }
                 _local4[0] = ((_local3[0] & 252) >> 2);
                 _local4[1] = (((_local3[0] & 3) << 4) | (_local3[1] >> 4));
                 _local4[2] = (((_local3[1] & 15) << 2) | (_local3[2] >> 6));
@@ -48,14 +48,14 @@ package com.popchan.framework.utils
                 {
                     _local4[(_local6 + 1)] = 64;
                     _local6++;
-                };
+                }
                 _local7 = 0;
                 while (_local7 < _local4.length)
                 {
                     _local2 = (_local2 + BASE64_CHARS.charAt(_local4[_local7]));
                     _local7++;
-                };
-            };
+                }
+            }
             return (_local2);
         }
 
@@ -80,7 +80,7 @@ package com.popchan.framework.utils
                 {
                     _local3[_local6] = BASE64_CHARS.indexOf(_arg1.charAt((_local5 + _local6)));
                     _local6++;
-                };
+                }
                 _local4[0] = ((_local3[0] << 2) + ((_local3[1] & 48) >> 4));
                 _local4[1] = (((_local3[1] & 15) << 4) + ((_local3[2] & 60) >> 2));
                 _local4[2] = (((_local3[2] & 3) << 6) + _local3[3]);
@@ -90,9 +90,9 @@ package com.popchan.framework.utils
                     if (_local3[(_local7 + 1)] == 64) break;
                     _local2.writeByte(_local4[_local7]);
                     _local7++;
-                };
+                }
                 _local5 = (_local5 + 4);
-            };
+            }
             _local2.position = 0;
             return (_local2);
         }

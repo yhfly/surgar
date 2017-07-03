@@ -25,11 +25,11 @@ package com.popchan.framework.ds
             if (_arg2 === undefined)
             {
                 return;
-            };
+            }
             if (this._dict[_arg1] === undefined)
             {
                 this._size++;
-            };
+            }
             this._dict[_arg1] = _arg2;
         }
 
@@ -43,7 +43,7 @@ package com.popchan.framework.ds
             if (this._dict[_arg1] !== undefined)
             {
                 this._size--;
-            };
+            }
             var _local2:* = this._dict[_arg1];
             delete this._dict[_arg1];
             return (_local2);
@@ -69,9 +69,9 @@ package com.popchan.framework.ds
                 for (_local2 in this._dict)
                 {
                     _local1++;
-                };
+                }
                 return (_local1);
-            };
+            }
             return (this._size);
         }
 
@@ -83,9 +83,9 @@ package com.popchan.framework.ds
                 for (_local1 in this._dict)
                 {
                     return false;
-                };
+                }
                 return true;
-            };
+            }
             return ((this._size == 0));
         }
 
@@ -101,7 +101,7 @@ package com.popchan.framework.ds
             for each (_local2 in this._dict)
             {
                 _local1.push(_local2);
-            };
+            }
             return (_local1);
         }
 
@@ -121,7 +121,7 @@ package com.popchan.framework.ds
             for (_local3 in this._dict)
             {
                 _local2.put(_local3, this._dict[_local3]);
-            };
+            }
             return (_local2);
         }
 
@@ -138,7 +138,7 @@ package com.popchan.framework.ds
             for (_local3 in this._dict)
             {
                 _local2++;
-            };
+            }
             this._size = _local2;
         }
 

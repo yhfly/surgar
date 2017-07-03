@@ -75,7 +75,7 @@ package com.popchan.sugar.core.cfg
             if (this.dict.contains(guideId))
             {
                 return (this.dict.take(guideId));
-            };
+            }
             for each (_local2 in guideXML.guide)
             {
                 if (int(_local2.@id) == guideId)
@@ -95,27 +95,27 @@ package com.popchan.sugar.core.cfg
                         {
                             _local8 = String(_local4.@rect).split(",");
                             _local5.rect = new Rectangle(int(_local8[0]), int(_local8[1]), int(_local8[2]), int(_local8[3]));
-                        };
+                        }
                         if (_local4.hasOwnProperty("@rectAdd1"))
                         {
                             _local9 = String(_local4.@rectAdd1).split(",");
                             _local5.rectAdd1 = new Rectangle(int(_local9[0]), int(_local9[1]), int(_local9[2]), int(_local9[3]));
-                        };
+                        }
                         if (_local4.hasOwnProperty("@rectAdd2"))
                         {
                             _local10 = String(_local4.@rectAdd2).split(",");
                             _local5.rectAdd2 = new Rectangle(int(_local10[0]), int(_local10[1]), int(_local10[2]), int(_local10[3]));
-                        };
+                        }
                         _local6 = String(_local4.@p1).split(",");
                         _local5.p1 = new Point(int(_local6[0]), int(_local6[1]));
                         _local7 = String(_local4.@p2).split(",");
                         _local5.p2 = new Point(int(_local7[0]), int(_local7[1]));
                         _local3.push(_local5);
-                    };
+                    }
                     this.dict.put(guideId, _local3);
                     return (_local3);
-                };
-            };
+                }
+            }
             return (null);
         }
 

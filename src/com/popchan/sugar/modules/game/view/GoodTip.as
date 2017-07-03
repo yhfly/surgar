@@ -17,30 +17,30 @@ package com.popchan.sugar.modules.game.view
 
         public function GoodTip()
         {
-            this.tips = [null];
-            this.tips.push(ToolKit.createImage(this, Core.texturesManager.getTexture("good"), 0, 0, true));
-            this.tips.push(ToolKit.createImage(this, Core.texturesManager.getTexture("excellent"), 0, 0, true));
-            this.tips.push(ToolKit.createImage(this, Core.texturesManager.getTexture("prefect"), 0, 0, true));
+            tips = [null];
+            tips.push(ToolKit.createImage(this, Core.texturesManager.getTexture("good"), 0, 0, true));
+            tips.push(ToolKit.createImage(this, Core.texturesManager.getTexture("excellent"), 0, 0, true));
+            tips.push(ToolKit.createImage(this, Core.texturesManager.getTexture("prefect"), 0, 0, true));
         }
 
         public function setType(_arg1:int):void
         {
-            var _local2:Image;
+            var image:Image;
             SoundManager.instance.playSound("great");
-            for each (_local2 in this.tips)
+            for each (image in tips)
             {
-                if (_local2 != null)
+                if (image != null)
                 {
-                    _local2.visible = false;
-                };
-            };
-            this.tips[_arg1].visible = true;
-            this.doAction();
+                    image.visible = false;
+                }
+            }
+            tips[_arg1].visible = true;
+            doAction();
         }
 
         private function doAction():void
         {
-            this.scaleX = (this.scaleY = 0);
+            scaleX = (scaleY = 0);
             Tweener.addTween(this, {
                 "time":0.4,
                 "scaleX":1,
@@ -50,7 +50,7 @@ package com.popchan.sugar.modules.game.view
             Tweener.addTween(this, {
                 "time":1,
                 "delay":0.2,
-                "onComplete":this.onActionEnd,
+                "onComplete":onActionEnd,
                 "transition":"linear"
             });
             Tweener.addTween(this, {
@@ -65,9 +65,9 @@ package com.popchan.sugar.modules.game.view
         {
             Tweener.removeTweens(this);
             pool.put(this);
-            this.removeFromParent();
+            removeFromParent();
         }
 
 
     }
-}//package com.popchan.sugar.modules.game.view
+}

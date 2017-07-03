@@ -52,7 +52,7 @@ package com.popchan.framework.manager
                 this.take(RIGHTLIST).touchable = false;
                 this.take(PUPOP).touchable = false;
                 this.take(PROGRESS).touchable = false;
-            };
+            }
         }
 
         public function setOrder(_arg1:Array):void
@@ -64,11 +64,11 @@ package com.popchan.framework.manager
                 if (!this.contains(_arg1[_local3]))
                 {
                     this.put(_arg1[_local3]);
-                };
+                }
                 _local2 = this.take(_arg1[_local3]);
                 Core.stage3DManager.canvas.setChildIndex(_local2, _local3);
                 _local3++;
-            };
+            }
         }
 
         public function put(_arg1:String):void
@@ -102,7 +102,7 @@ package com.popchan.framework.manager
             if (_local3.contains(_arg1))
             {
                 _local3.removeChild(_arg1);
-            };
+            }
         }
 
         public function removeLayer(_arg1:String):void
@@ -112,7 +112,7 @@ package com.popchan.framework.manager
             if (this.contains(_arg1))
             {
                 Core.stage3DManager.canvas.removeChild(_local2);
-            };
+            }
         }
 
         public function addLayer(_arg1:String):void

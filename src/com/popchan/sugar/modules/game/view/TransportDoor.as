@@ -41,8 +41,8 @@ package com.popchan.sugar.modules.game.view
                 if ((((_arg1 >= TileConst.T_DOOR_EXIT1)) && ((_arg1 <= TileConst.T_DOOR_EXIT9))))
                 {
                     this.animation.y = -30;
-                };
-            };
+                }
+            }
         }
 
 

@@ -96,7 +96,7 @@ package com.popchan.sugar.modules.menu.view
                 SoundManager.instance.playSound("button_down", false);
                 close();
                 MsgDispatcher.execute(GameEvents.OPEN_MAP_UI);
-            };
+            }
         }
 
 

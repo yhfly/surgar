@@ -37,9 +37,9 @@ package com.popchan.framework.manager
                     if (_local8.callBack == _arg2)
                     {
                         return;
-                    };
-                };
-            };
+                    }
+                }
+            }
             _local7 = new TimeModel();
             _local7.callBack = _arg2;
             _local7.target = _arg1;
@@ -61,7 +61,7 @@ package com.popchan.framework.manager
             if (_local3 == null)
             {
                 return;
-            };
+            }
             var _local4:int;
             while (_local4 < _local3.length)
             {
@@ -71,13 +71,13 @@ package com.popchan.framework.manager
                     _local3.splice(_local4, 1);
                     this._count--;
                     _local4--;
-                };
+                }
                 _local4++;
-            };
+            }
             if (this._count == 0)
             {
                 this.pause();
-            };
+            }
         }
 
         protected function onEnterFrame(_arg1:Event):void
@@ -110,12 +110,12 @@ package com.popchan.framework.manager
                                 else
                                 {
                                     _local4.callBack(_local4.params);
-                                };
+                                }
                                 if (_local4.currentCount == _local4.repeatCount)
                                 {
                                     this.remove(_local4.target, _local4.callBack);
                                     break;
-                                };
+                                }
                             }
                             else
                             {
@@ -126,12 +126,12 @@ package com.popchan.framework.manager
                                 else
                                 {
                                     _local4.callBack(_local4.params);
-                                };
-                            };
-                        };
-                    };
-                };
-            };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         public function pause():void
@@ -140,7 +140,7 @@ package com.popchan.framework.manager
             {
                 this._isRunning = false;
                 Core.stageManager.stage.removeEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-            };
+            }
         }
 
         public function resume():void
@@ -149,7 +149,7 @@ package com.popchan.framework.manager
             {
                 this._isRunning = true;
                 Core.stageManager.stage.addEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-            };
+            }
         }
 
 

@@ -23,7 +23,7 @@ package com.popchan.sugar.modules.guide
             while (numChildren > 0)
             {
                 removeChildAt(0, true);
-            };
+            }
             var _local2:Quad = this.createRect(0, 0, _arg1.left, Core.stage3DManager.canvas.height);
             addChild(_local2);
             _local2 = this.createRect(_arg1.right, 0, (Core.stage3DManager.canvas.width - _arg1.right), Core.stage3DManager.canvas.height);
@@ -45,7 +45,7 @@ package com.popchan.sugar.modules.guide
             while (numChildren > 0)
             {
                 removeChildAt(0, true);
-            };
+            }
             var _local2:Quad = this.createRect(_arg1.x, _arg1.y, _arg1.width, _arg1.height);
             addChild(_local2);
         }
@@ -56,11 +56,11 @@ package com.popchan.sugar.modules.guide
             if (_arg3 <= 0)
             {
                 _arg3 = 1;
-            };
+            }
             if (_arg4 <= 0)
             {
                 _arg4 = 1;
-            };
+            }
             _local5 = new Quad(_arg3, _arg4, 0);
             _local5.alpha = 0.7;
             _local5.x = _arg1;

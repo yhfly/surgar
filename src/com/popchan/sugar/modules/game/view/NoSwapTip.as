@@ -42,7 +42,7 @@ package com.popchan.sugar.modules.game.view
                             if (end != null)
                             {
                                 end();
-                            };
+                            }
                         }
                     });
                 }

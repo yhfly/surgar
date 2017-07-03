@@ -1,5 +1,5 @@
 ﻿
-package com.popchan.sugar.modules.game.view
+package com.popchan.sugar.modules.game.view.candyElement
 {
     import starling.display.Sprite;
     import com.popchan.framework.ds.BasePool;

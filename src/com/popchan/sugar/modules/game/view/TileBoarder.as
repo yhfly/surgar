@@ -52,7 +52,7 @@ package com.popchan.sugar.modules.game.view
             for (_local5 in this.resDict)
             {
                 this.resDict[_local5].visible = false;
-            };
+            }
             this.x = _arg3;
             this.y = _arg4;
             this.resDict[_arg1].visible = true;

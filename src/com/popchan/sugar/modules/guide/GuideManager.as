@@ -35,7 +35,7 @@ package com.popchan.sugar.modules.guide
             if (_instance == null)
             {
                 _instance = new (GuideManager)();
-            };
+            }
             return (_instance);
         }
 
@@ -57,7 +57,7 @@ package com.popchan.sugar.modules.guide
             if (_currentStep > _list.length)
             {
                 return;
-            };
+            }
             var guideVO:GuideVO = _list[(_currentStep - 1)];
             switch (guideVO.type)
             {
@@ -73,11 +73,11 @@ package com.popchan.sugar.modules.guide
                     if (guideVO.rectAdd1 != null)
                     {
                         this._maskPanel.addMask(guideVO.rectAdd1);
-                    };
+                    }
                     if (guideVO.rectAdd2 != null)
                     {
                         this._maskPanel.addMask(guideVO.rectAdd2);
-                    };
+                    }
                     break;
                 case 3:
                     setTimeout(function ():void
@@ -96,11 +96,11 @@ package com.popchan.sugar.modules.guide
                     this._maskPanel.visible = false;
                     this._talkPanel.visible = false;
                     break;
-            };
+            }
             if (guideVO.next)
             {
                 this.nextStep();
-            };
+            }
         }
 
         public function nextStep():void

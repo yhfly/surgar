@@ -26,7 +26,7 @@ package com.popchan.sugar.modules.game.view.effect
                 addChild(_local2);
                 this.suns.push(_local2);
                 _local1++;
-            };
+            }
         }
 
         public function setData(_arg1:Number):void
@@ -48,7 +48,7 @@ package com.popchan.sugar.modules.game.view.effect
                 _local3.y = _local5;
                 this.suns.push(_local3);
                 _local2++;
-            };
+            }
         }
 
 

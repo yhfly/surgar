@@ -19,7 +19,7 @@ package com.popchan.sugar.modules.menu
             if (_instance == null)
             {
                 _instance = new (MenuModule)();
-            };
+            }
             return (_instance);
         }
 

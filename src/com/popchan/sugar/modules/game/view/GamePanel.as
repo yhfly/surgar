@@ -40,6 +40,12 @@ package com.popchan.sugar.modules.game.view
     import com.popchan.sugar.modules.game.view.effect.BombNormalEffect;
     import com.popchan.sugar.modules.game.view.effect.LaserEffect;
     import com.popchan.sugar.modules.game.view.effect.LineBombEffect;
+    import com.popchan.sugar.modules.game.view.candyElement.Brick;
+    import com.popchan.sugar.modules.game.view.candyElement.Candy;
+    import com.popchan.sugar.modules.game.view.candyElement.Eat;
+    import com.popchan.sugar.modules.game.view.candyElement.Ice;
+    import com.popchan.sugar.modules.game.view.candyElement.Monster;
+    import com.popchan.sugar.modules.game.view.candyElement.Stone;
 
     public class GamePanel extends BasePanel3D implements IGuide 
     {

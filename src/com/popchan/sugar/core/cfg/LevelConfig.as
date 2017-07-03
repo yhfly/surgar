@@ -36,7 +36,7 @@
             if (this.dict.contains(_arg1))
             {
                 return (this.dict.take(_arg1));
-            };
+            }
             var levelXml:XML = Core.texturesManager.getXml(("Level" + _arg1));
             if (levelXml != null)
             {
@@ -54,7 +54,7 @@
                 else
                 {
                     levelCO.colorCount = 5;
-                };
+                }
                 if (levelXml.hasOwnProperty("ironWire"))
                 {
                     levelCO.ironWire = this.convertToArray(String(levelXml.ironWire));
@@ -62,7 +62,7 @@
                 else
                 {
                     levelCO.ironWire = this.getBlankArray();
-                };
+                }
                 if (levelXml.hasOwnProperty("eat"))
                 {
                     levelCO.eat = this.convertToArray(String(levelXml.eat));
@@ -70,7 +70,7 @@
                 else
                 {
                     levelCO.eat = this.getBlankArray();
-                };
+                }
                 if (levelXml.hasOwnProperty("monster"))
                 {
                     levelCO.monster = this.convertToArray(String(levelXml.monster));
@@ -78,7 +78,7 @@
                 else
                 {
                     levelCO.monster = this.getBlankArray();
-                };
+                }
                 levelCO.lock = this.convertToArray(String(levelXml.lock));
                 levelCO.entryAndExit = this.convertToArray(String(levelXml.entryAndExit));
                 levelCO.aim = String(levelXml.aim).split("|");
@@ -95,11 +95,11 @@
                         if (levelCO.tile[j][i] > 0)
                         {
                             levelCO.needScore = (levelCO.needScore + 50);
-                        };
+                        }
                         j++;
-                    };
+                    }
                     i++;
-                };
+                }
                 for each (_local5 in levelCO.aim)
                 {
                     _local7 = int(_local5.split(",")[0]);
@@ -107,14 +107,14 @@
                     if (_local7 != AimType.SCORE)
                     {
                         levelCO.needScore = (levelCO.needScore + (_local8 * 50));
-                    };
-                };
+                    }
+                }
                 this.dict.put(_arg1, levelCO);
             }
             else
             {
                 Debug.log(("未找到关卡-" + _arg1));
-            };
+            }
             return (levelCO);
         }
 
@@ -136,9 +136,9 @@
                 {
                     _local4[_local6][_local9] = int(_local8[_local9]);
                     _local9++;
-                };
+                }
                 _local6++;
-            };
+            }
             return (_local4);
         }
 
@@ -155,9 +155,9 @@
                 {
                     _local1[_local2][_local3] = 0;
                     _local3++;
-                };
+                }
                 _local2++;
-            };
+            }
             return (_local1);
         }
 

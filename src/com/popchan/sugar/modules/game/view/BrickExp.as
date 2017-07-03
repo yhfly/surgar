@@ -37,7 +37,7 @@ package com.popchan.sugar.modules.game.view
                 else
                 {
                     this.img.texture = this.texture;
-                };
+                }
             }
             else
             {
@@ -51,9 +51,9 @@ package com.popchan.sugar.modules.game.view
                     else
                     {
                         this.img.texture = this.texture;
-                    };
-                };
-            };
+                    }
+                }
+            }
             this.addChild(this.img);
             this.img.pivotX = (this.img.width >> 1);
             this.img.pivotY = (this.img.height >> 1);
@@ -63,7 +63,7 @@ package com.popchan.sugar.modules.game.view
             {
                 this._vx = -6;
                 this._vr = -0.1;
-            };
+            }
             this._count = 0;
             this._vy = (Math.random() * -6);
             Core.timerManager.add(this, this.update, 16);
@@ -82,7 +82,7 @@ package com.popchan.sugar.modules.game.view
                 Core.timerManager.remove(this, this.update);
                 pool.put(this);
                 this.removeFromParent();
-            };
+            }
         }
 
 

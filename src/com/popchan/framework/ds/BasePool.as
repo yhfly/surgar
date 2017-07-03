@@ -27,7 +27,7 @@ package com.popchan.framework.ds
             if (this._storeList.length > 0)
             {
                 return (this._storeList.shift());
-            };
+            }
             return (new this._cacheClass());
         }
 
@@ -36,15 +36,15 @@ package com.popchan.framework.ds
             if (_arg1 == null)
             {
                 return false;
-            };
+            }
             if (this._storeList.length > this._maxCacheNum)
             {
                 return false;
-            };
+            }
             if (this._storeList.indexOf(_arg1) > 0)
             {
                 return false;
-            };
+            }
             this._storeList.push(_arg1);
             return true;
         }

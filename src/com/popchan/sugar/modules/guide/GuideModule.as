@@ -18,7 +18,7 @@ package com.popchan.sugar.modules.guide
             if (_instance == null)
             {
                 _instance = new (GuideModule)();
-            };
+            }
             return (_instance);
         }
 

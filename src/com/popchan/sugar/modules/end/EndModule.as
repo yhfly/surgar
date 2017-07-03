@@ -19,7 +19,7 @@ package com.popchan.sugar.modules.end
             if (_instance == null)
             {
                 _instance = new (EndModule)();
-            };
+            }
             return (_instance);
         }
 
