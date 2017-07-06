@@ -6,7 +6,5 @@ package com.popchan.sugar.core.cfg
 
         public static var levelConfig:LevelConfig = new LevelConfig();
         public static var guideConfig:GuideConfig = new GuideConfig();
-
-
     }
 } 

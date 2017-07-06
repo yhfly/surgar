@@ -1,5 +1,5 @@
 ﻿
-package com.popchan.sugar.modules.game.view
+package com.popchan.sugar.modules.game.view.panel
 {
     import starling.display.Sprite;
     import starling.display.TextSprite;
@@ -16,6 +16,7 @@ package com.popchan.sugar.modules.game.view
     import starling.textures.Texture;
     import com.popchan.sugar.core.cfg.levels.LevelCO;
     import flash.geom.Point;
+    import com.popchan.sugar.modules.game.view.HProgressBar;
 
     public class InfoPanel extends Sprite 
     {

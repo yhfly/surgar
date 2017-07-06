@@ -9,7 +9,5 @@ package com.popchan.sugar.core.data
         public static const VERT:int = 2;
         public static const BOMB:int = 3;
         public static const COLORFUL:int = 4;
-
-
     }
-}//package com.popchan.sugar.core.data
+}

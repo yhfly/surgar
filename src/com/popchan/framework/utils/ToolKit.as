@@ -1,5 +1,4 @@
-﻿
-package com.popchan.framework.utils
+﻿package com.popchan.framework.utils
 {
     import starling.display.Image;
     import starling.display.DisplayObjectContainer;
@@ -14,21 +13,19 @@ package com.popchan.framework.utils
 
     public class ToolKit 
     {
-
-
-        public static function createImage(_arg1:DisplayObjectContainer, _arg2:Texture, _arg3:int=0, _arg4:int=0, _arg5:Boolean=false, _arg6:Boolean=true):Image
+        public static function createImage(continer:DisplayObjectContainer, texture:Texture, posX:int=0, posY:int=0, pivotCenter:Boolean=false, touchable:Boolean=true):Image
         {
-            var _local7:Image = new Image(_arg2);
-            _local7.x = _arg3;
-            _local7.y = _arg4;
-            _local7.touchable = _arg6;
-            _arg1.addChild(_local7);
-            if (_arg5)
+            var image:Image = new Image(texture);
+            image.x = posX;
+            image.y = posY;
+            image.touchable = touchable;
+            continer.addChild(image);
+            if (pivotCenter)
             {
-                _local7.pivotX = (_local7.width >> 1);
-                _local7.pivotY = (_local7.height >> 1);
+                image.pivotX = (image.width >> 1);
+                image.pivotY = (image.height >> 1);
             }
-            return (_local7);
+            return (image);
         }
 
         public static function createMovieClip(_arg1:DisplayObjectContainer, _arg2:Vector.<Texture>, _arg3:int=0, _arg4:int=0):CMovieClip

@@ -39,7 +39,5 @@ package com.popchan.sugar.modules.menu
         {
             WindowManager3D.getInstance().open(WindowInfo.menuPanelInfo, null, false, new Point(0, 0));
         }
-
-
     }
-}//package com.popchan.sugar.modules.menu
+} 

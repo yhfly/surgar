@@ -15,4 +15,4 @@ package com.popchan.sugar.modules.game.view
 
 
     }
-}//package com.popchan.sugar.modules.game.view
+}

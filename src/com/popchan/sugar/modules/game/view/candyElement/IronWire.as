@@ -1,10 +1,11 @@
 ﻿
-package com.popchan.sugar.modules.game.view
+package com.popchan.sugar.modules.game.view.candyElement
 {
     import com.popchan.framework.ds.BasePool;
     import starling.display.Image;
     import com.popchan.framework.utils.ToolKit;
     import com.popchan.framework.core.Core;
+    import com.popchan.sugar.modules.game.view.Element;
 
 	/**
 	 * 铁丝 

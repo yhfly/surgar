@@ -1,5 +1,5 @@
 ﻿
-package com.popchan.sugar.modules.game.view
+package com.popchan.sugar.modules.game.view.tip
 {
     import com.popchan.framework.ds.BasePool;
     import com.popchan.framework.utils.ToolKit;
@@ -7,6 +7,7 @@ package com.popchan.sugar.modules.game.view
     import starling.display.Image;
     import com.popchan.framework.manager.SoundManager;
     import caurina.transitions.Tweener;
+    import com.popchan.sugar.modules.game.view.Element;
 
     public class GoodTip extends Element 
     {
@@ -23,7 +24,7 @@ package com.popchan.sugar.modules.game.view
             tips.push(ToolKit.createImage(this, Core.texturesManager.getTexture("prefect"), 0, 0, true));
         }
 
-        public function setType(_arg1:int):void
+        public function setType(type:int):void
         {
             var image:Image;
             SoundManager.instance.playSound("great");
@@ -34,7 +35,7 @@ package com.popchan.sugar.modules.game.view
                     image.visible = false;
                 }
             }
-            tips[_arg1].visible = true;
+            tips[type].visible = true;
             doAction();
         }
 
@@ -67,7 +68,5 @@ package com.popchan.sugar.modules.game.view
             pool.put(this);
             removeFromParent();
         }
-
-
     }
 }

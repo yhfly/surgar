@@ -19,11 +19,11 @@
         {
             if (stage)
             {
-                this.init();
+                init();
             }
             else
             {
-                addEventListener(flash.events.Event.ADDED_TO_STAGE, this.init);
+                addEventListener(flash.events.Event.ADDED_TO_STAGE, init);
             }
         }
 
@@ -36,10 +36,10 @@
         private function init(_arg1:flash.events.Event=null):void
         {
             _instance = this;
-            removeEventListener(flash.events.Event.ADDED_TO_STAGE, this.init);
+            removeEventListener(flash.events.Event.ADDED_TO_STAGE, init);
             stage.scaleMode = StageScaleMode.NO_SCALE;
             var starling:Starling = new Starling(GameEntry, stage, null, null, "auto", "baseline");
-            starling.addEventListener(starling.events.Event.ROOT_CREATED, this.onCreate);
+            starling.addEventListener(starling.events.Event.ROOT_CREATED, onCreate);
         }
 
         private function onCreate(starling:starling.events.Event):void

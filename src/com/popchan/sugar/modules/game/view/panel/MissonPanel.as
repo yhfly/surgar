@@ -1,5 +1,5 @@
 ﻿
-package com.popchan.sugar.modules.game.view
+package com.popchan.sugar.modules.game.view.panel
 {
     import com.popchan.sugar.modules.BasePanel3D;
     import flash.utils.Dictionary;

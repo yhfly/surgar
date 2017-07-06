@@ -34,23 +34,23 @@ package com.popchan.framework.manager
 
         public function LayerManager()
         {
-            this._dict = new Dict();
+            _dict = new Dict();
         }
 
         public function setup():void
         {
-            this.setOrder(DEFAULT_ORDER);
-            this.take(ELEMENT).mouseEnabled = false;
-            this.take(BROADCAST).mouseChildren = false;
-            this.take(BROADCAST).mouseEnabled = false;
-            this.take(MAP_FRONT).mouseEnabled = false;
-            this.take(MAP_FRONT).mouseChildren = false;
-            this.take(UI).mouseEnabled = false;
-            this.take(ALERT).mouseEnabled = false;
-            this.take(BROADCAST).mouseEnabled = false;
-            this.take(RIGHTLIST).mouseEnabled = false;
-            this.take(PUPOP).mouseEnabled = false;
-            this.take(PROGRESS).mouseEnabled = false;
+            setOrder(DEFAULT_ORDER);
+            take(ELEMENT).mouseEnabled = false;
+            take(BROADCAST).mouseChildren = false;
+            take(BROADCAST).mouseEnabled = false;
+            take(MAP_FRONT).mouseEnabled = false;
+            take(MAP_FRONT).mouseChildren = false;
+            take(UI).mouseEnabled = false;
+            take(ALERT).mouseEnabled = false;
+            take(BROADCAST).mouseEnabled = false;
+            take(RIGHTLIST).mouseEnabled = false;
+            take(PUPOP).mouseEnabled = false;
+            take(PROGRESS).mouseEnabled = false;
         }
 
         public function setOrder(_arg1:Array):void
@@ -59,11 +59,11 @@ package com.popchan.framework.manager
             var _local3:int;
             while (_local3 < _arg1.length)
             {
-                if (!this.contains(_arg1[_local3]))
+                if (!contains(_arg1[_local3]))
                 {
-                    this.put(_arg1[_local3]);
+                    put(_arg1[_local3]);
                 }
-                _local2 = this.take(_arg1[_local3]);
+                _local2 = take(_arg1[_local3]);
                 Core.stageManager.canvas.setChildIndex(_local2, _local3);
                 _local3++;
             }
@@ -73,31 +73,31 @@ package com.popchan.framework.manager
         {
             var _local2:Sprite = new Sprite();
             _local2.name = _arg1;
-            this._dict.put(_arg1, _local2);
+            _dict.put(_arg1, _local2);
             Core.stageManager.canvas.addChild(_local2);
         }
 
         public function take(_arg1:String):Sprite
         {
-            return (this._dict.take(_arg1));
+            return (_dict.take(_arg1));
         }
 
         public function contains(_arg1:String):Boolean
         {
-            return (this._dict.contains(_arg1));
+            return (_dict.contains(_arg1));
         }
 
         public function addChild(_arg1:DisplayObject, _arg2:String):void
         {
             var _local3:Sprite;
-            _local3 = this._dict.take(_arg2);
+            _local3 = _dict.take(_arg2);
             _local3.addChild(_arg1);
         }
 
         public function removeChild(_arg1:DisplayObject, _arg2:String):void
         {
             var _local3:Sprite;
-            _local3 = this._dict.take(_arg2);
+            _local3 = _dict.take(_arg2);
             if (_local3.contains(_arg1))
             {
                 _local3.removeChild(_arg1);
@@ -107,8 +107,8 @@ package com.popchan.framework.manager
         public function removeLayer(_arg1:String):void
         {
             var _local2:Sprite;
-            _local2 = this._dict.take(_arg1);
-            if (this.contains(_arg1))
+            _local2 = _dict.take(_arg1);
+            if (contains(_arg1))
             {
                 DisplayUtil.removeForParent(_local2, false);
             }
@@ -117,11 +117,9 @@ package com.popchan.framework.manager
         public function addLayer(_arg1:String):void
         {
             var _local2:Sprite;
-            _local2 = this._dict.take(_arg1);
+            _local2 = _dict.take(_arg1);
             var _local3:int = DEFAULT_ORDER.indexOf(_arg1);
             Core.stageManager.canvas.addChildAt(_local2, _local3);
         }
-
-
     }
-}//package com.popchan.framework.manager
+} 

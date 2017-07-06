@@ -67,8 +67,8 @@ package
             assetManager.enqueue("assets/textures/game02.xml");
             assetManager.enqueue("assets/textures/game03.png");
             assetManager.enqueue("assets/textures/game03.xml");
-            var i:int = 300;
-            while (i <= 330)
+            var i:int = 1;
+            while (i <= 5)
             {
                 assetManager.enqueue((("assets/level/Level" + i) + ".xml"));
                 i++;
@@ -111,7 +111,7 @@ package
 //				scoreTip.x = 100;
 //				scoreTip.y = 100;
 				
-				var level:int = 329;
+				var level:int = 1;
 				Model.levelModel.selectedLevel = level;
 				MsgDispatcher.execute(GameEvents.OPEN_GAME_UI);
             }

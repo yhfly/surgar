@@ -7,8 +7,9 @@ package com.popchan.framework.manager
 
         public static function log(... _args):void
         {
+			trace(_args);
         }
 
 
     }
-}//package com.popchan.framework.manager
+}

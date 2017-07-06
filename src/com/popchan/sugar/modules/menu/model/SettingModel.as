@@ -3,6 +3,11 @@ package com.popchan.sugar.modules.menu.model
 {
     import com.popchan.framework.utils.DataUtil;
 
+	/**
+	 *设置 
+	 * @author admin
+	 * 
+	 */	
     public class SettingModel 
     {
 
@@ -13,17 +18,17 @@ package com.popchan.sugar.modules.menu.model
 
         public function loadData():void
         {
-            this.sound = DataUtil.readBool("sound", true);
-            this.music = DataUtil.readBool("music", true);
+            sound = DataUtil.readBool("sound", true);
+            music = DataUtil.readBool("music", true);
         }
 
         public function saveData():void
         {
-            DataUtil.writeBool("sound", this.sound);
-            DataUtil.writeBool("music", this.music);
+            DataUtil.writeBool("sound", sound);
+            DataUtil.writeBool("music", music);
             DataUtil.save(DataUtil.id);
         }
 
 
     }
-}//package com.popchan.sugar.modules.menu.model
+} 

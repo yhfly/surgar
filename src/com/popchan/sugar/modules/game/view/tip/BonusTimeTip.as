@@ -1,5 +1,5 @@
 ﻿
-package com.popchan.sugar.modules.game.view
+package com.popchan.sugar.modules.game.view.tip
 {
     import starling.display.Sprite;
     import com.popchan.framework.ds.BasePool;
@@ -8,6 +8,11 @@ package com.popchan.sugar.modules.game.view
     import com.popchan.framework.manager.SoundManager;
     import caurina.transitions.Tweener;
 
+	/**
+	 * 奖励时间 提示， 完成任务时候 
+	 * @author admin
+	 * 
+	 */	
     public class BonusTimeTip extends Sprite 
     {
 
@@ -29,23 +34,23 @@ package com.popchan.sugar.modules.game.view
                 "x":(Core.stage3DManager.canvasWidth >> 1),
                 "time":0.4,
                 "transition":"easeOutBack",
-                "onComplete":function ():void
-                {
-                    Tweener.addTween(ins, {
-                        "x":(Core.stage3DManager.canvasWidth + 100),
-                        "time":0.4,
-                        "delay":0.4,
-                        "transition":"easeInBack",
-                        "onComplete":function ():void
-                        {
-                            ins.removeFromParent();
-                            pool.put(ins);
-                        }
-                    });
-                }
-            });
+                "onComplete":onComplete });
         }
 
-
+		private function onComplete():void
+		{
+			Tweener.addTween(this, {
+				"x":(Core.stage3DManager.canvasWidth + 100),
+				"time":0.4,
+				"delay":0.4,
+				"transition":"easeInBack",
+				"onComplete":allComplete});
+		}
+		
+		public function allComplete():void
+		{
+			removeFromParent();
+			pool.put(this);
+		}
     }
-}//package com.popchan.sugar.modules.game.view
+} 

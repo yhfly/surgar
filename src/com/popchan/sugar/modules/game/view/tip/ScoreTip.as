@@ -1,11 +1,12 @@
 ﻿
-package com.popchan.sugar.modules.game.view
+package com.popchan.sugar.modules.game.view.tip
 {
     import com.popchan.framework.ds.BasePool;
     import starling.display.TextSprite;
     import com.popchan.framework.utils.ToolKit;
     import com.popchan.framework.core.Core;
     import caurina.transitions.Tweener;
+    import com.popchan.sugar.modules.game.view.Element;
 
     public class ScoreTip extends Element 
     {

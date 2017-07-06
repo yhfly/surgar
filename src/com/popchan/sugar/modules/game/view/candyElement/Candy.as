@@ -273,7 +273,7 @@ package com.popchan.sugar.modules.game.view.candyElement
             }
         }
 
-        public function setBomb(_arg1:int):void
+        public function setBomb($bombLeftCount:int):void
         {
             if (img != null)
             {
@@ -285,12 +285,12 @@ package com.popchan.sugar.modules.game.view.candyElement
             img.pivotX = (img.width >> 1);
             img.pivotY = (img.height >> 1);
             addChild(img);
-            _bombLeftCount = _arg1;
+            _bombLeftCount = $bombLeftCount;
             if (!bomb_txt)
             {
                 bomb_txt = ToolKit.createTextSprite(this, Core.texturesManager.getTextures("bombtxt_"), -22, 0, 8, "0123456789/x+-", 24);
             }
-            bomb_txt.text = (_arg1 + "");
+            bomb_txt.text = ($bombLeftCount + "");
         }
 
         public function bombCountUpdate():void

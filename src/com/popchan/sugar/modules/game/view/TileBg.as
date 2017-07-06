@@ -6,6 +6,11 @@ package com.popchan.sugar.modules.game.view
     import starling.textures.Texture;
     import com.popchan.framework.core.Core;
 
+	/**
+	 * 背景格子 
+	 * @author admin
+	 * 
+	 */	
     public class TileBg extends Element 
     {
 

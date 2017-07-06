@@ -1,13 +1,13 @@
 ﻿package com.popchan.sugar.core.cfg
 {
     import com.popchan.sugar.modules.menu.view.MenuPanel;
-    import com.popchan.sugar.modules.game.view.GamePanel;
+    import com.popchan.sugar.modules.game.view.panel.GamePanel;
     import com.popchan.sugar.modules.end.view.GameEndPanel;
     import com.popchan.sugar.modules.end.view.VictoryPanel;
     import com.popchan.sugar.modules.end.view.FailedPanel;
     import com.popchan.sugar.modules.map.view.MapPanel;
-    import com.popchan.sugar.modules.game.view.MissonPanel;
-    import com.popchan.sugar.modules.game.view.PausePanel;
+    import com.popchan.sugar.modules.game.view.panel.MissonPanel;
+    import com.popchan.sugar.modules.game.view.panel.PausePanel;
 
     public class WindowInfo 
     {

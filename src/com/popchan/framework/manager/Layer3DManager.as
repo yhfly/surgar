@@ -34,24 +34,24 @@ package com.popchan.framework.manager
 
         public function Layer3DManager()
         {
-            this._dict = new Dict();
+            _dict = new Dict();
         }
 
         public function setup():void
         {
-            if (((Starling.current) && (Starling.current.stage)))
+            if (Starling.current && Starling.current.stage)
             {
-                this.setOrder(DEFAULT_ORDER);
-                this.take(ELEMENT).touchable = false;
-                this.take(BROADCAST).touchable = false;
-                this.take(BROADCAST).touchable = false;
-                this.take(MAP_FRONT).touchable = false;
-                this.take(UI).touchable = false;
-                this.take(ALERT).touchable = false;
-                this.take(BROADCAST).touchable = false;
-                this.take(RIGHTLIST).touchable = false;
-                this.take(PUPOP).touchable = false;
-                this.take(PROGRESS).touchable = false;
+                setOrder(DEFAULT_ORDER);
+                take(ELEMENT).touchable = false;
+                take(BROADCAST).touchable = false;
+                take(BROADCAST).touchable = false;
+                take(MAP_FRONT).touchable = false;
+                take(UI).touchable = false;
+                take(ALERT).touchable = false;
+                take(BROADCAST).touchable = false;
+                take(RIGHTLIST).touchable = false;
+                take(PUPOP).touchable = false;
+                take(PROGRESS).touchable = false;
             }
         }
 
@@ -61,11 +61,11 @@ package com.popchan.framework.manager
             var _local3:int;
             while (_local3 < _arg1.length)
             {
-                if (!this.contains(_arg1[_local3]))
+                if (!contains(_arg1[_local3]))
                 {
-                    this.put(_arg1[_local3]);
+                    put(_arg1[_local3]);
                 }
-                _local2 = this.take(_arg1[_local3]);
+                _local2 = take(_arg1[_local3]);
                 Core.stage3DManager.canvas.setChildIndex(_local2, _local3);
                 _local3++;
             }
@@ -74,31 +74,31 @@ package com.popchan.framework.manager
         public function put(_arg1:String):void
         {
             var _local2:Sprite = new Sprite();
-            this._dict.put(_arg1, _local2);
+            _dict.put(_arg1, _local2);
             Core.stage3DManager.canvas.addChild(_local2);
         }
 
         public function take(_arg1:String):Sprite
         {
-            return (this._dict.take(_arg1));
+            return (_dict.take(_arg1));
         }
 
         public function contains(_arg1:String):Boolean
         {
-            return (this._dict.contains(_arg1));
+            return (_dict.contains(_arg1));
         }
 
         public function addChild(_arg1:DisplayObject, _arg2:String):void
         {
             var _local3:Sprite;
-            _local3 = this._dict.take(_arg2);
+            _local3 = _dict.take(_arg2);
             _local3.addChild(_arg1);
         }
 
         public function removeChild(_arg1:DisplayObject, _arg2:String):void
         {
             var _local3:Sprite;
-            _local3 = this._dict.take(_arg2);
+            _local3 = _dict.take(_arg2);
             if (_local3.contains(_arg1))
             {
                 _local3.removeChild(_arg1);
@@ -108,8 +108,8 @@ package com.popchan.framework.manager
         public function removeLayer(_arg1:String):void
         {
             var _local2:Sprite;
-            _local2 = this._dict.take(_arg1);
-            if (this.contains(_arg1))
+            _local2 = _dict.take(_arg1);
+            if (contains(_arg1))
             {
                 Core.stage3DManager.canvas.removeChild(_local2);
             }
@@ -118,11 +118,11 @@ package com.popchan.framework.manager
         public function addLayer(_arg1:String):void
         {
             var _local2:Sprite;
-            _local2 = this._dict.take(_arg1);
+            _local2 = _dict.take(_arg1);
             var _local3:int = DEFAULT_ORDER.indexOf(_arg1);
             Core.stage3DManager.canvas.addChildAt(_local2, _local3);
         }
 
 
     }
-}//package com.popchan.framework.manager
+} 

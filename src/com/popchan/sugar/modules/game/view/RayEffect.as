@@ -13,8 +13,8 @@ package com.popchan.sugar.modules.game.view
 
         public function RayEffect()
         {
-            var _local1:Image = ToolKit.createImage(this, Core.texturesManager.getTexture("sun"), 0, 0, true);
+            var image:Image = ToolKit.createImage(this, Core.texturesManager.getTexture("sun"), 0, 0, true);
         }
 
     }
-}//package com.popchan.sugar.modules.game.view
+} 

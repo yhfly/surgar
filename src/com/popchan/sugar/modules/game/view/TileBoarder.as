@@ -1,11 +1,15 @@
 ﻿
 package com.popchan.sugar.modules.game.view
 {
-    import com.popchan.framework.ds.BasePool;
-    import flash.utils.Dictionary;
-    import com.popchan.framework.utils.ToolKit;
     import com.popchan.framework.core.Core;
+    import com.popchan.framework.ds.BasePool;
+    import com.popchan.framework.utils.ToolKit;
+    
+    import flash.utils.Dictionary;
+    
+    import starling.display.Image;
     import starling.display.Sprite;
+    import starling.textures.Texture;
 
     public class TileBoarder extends Element 
     {
@@ -25,39 +29,43 @@ package com.popchan.sugar.modules.game.view
 
         public static var pool:BasePool = new BasePool(TileBoarder, 100);
 
-        private var resDict:Dictionary;
+		private static var dic:Dictionary = new Dictionary();
+		dic[x_border_heng_shang] = "x_border_heng_shang";
+		dic[x_border_heng_xia] = "x_border_heng_xia";
+		dic[x_border_left_down] = "x_border_left_down";
+		dic[x_border_left_down_x] = "x_border_left_down_x";
+		dic[x_border_left_up] = "x_border_left_up";
+		dic[x_border_left_up_x] = "x_border_left_up_x";
+		dic[x_border_right_down] = "x_border_right_down";
+		dic[x_border_right_down_x] = "x_border_right_down_x";
+		dic[x_border_right_up] = "x_border_right_up";
+		dic[x_border_right_up_x] = "x_border_right_up_x";
+		dic[x_border_shu_you] = "x_border_shu_you";
+		dic[x_border_shu_zuo] = "x_border_shu_zuo";
+		
+        private var _image:Image;
 
+		/**
+		 * 格子边框 
+		 * 
+		 */		
         public function TileBoarder()
         {
-            this.resDict = new Dictionary();
-            super();
-            this.resDict[1] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_heng_shang"));
-            this.resDict[2] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_heng_xia"));
-            this.resDict[3] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_left_down"));
-            this.resDict[4] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_left_down_x"));
-            this.resDict[5] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_left_up"));
-            this.resDict[6] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_left_up_x"));
-            this.resDict[7] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_right_down"));
-            this.resDict[8] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_right_down_x"));
-            this.resDict[9] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_right_up"));
-            this.resDict[10] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_right_up_x"));
-            this.resDict[11] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_shu_you"));
-            this.resDict[12] = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_shu_zuo"));
+			_image = ToolKit.createImage(this, Core.texturesManager.getTexture("x_border_heng_shang"));
+			addChild(_image);
         }
 
-        public function setType(_arg1:int, _arg2:Sprite, _arg3:int, _arg4:int):void
+        public function setType(borderType:int, _arg2:Sprite, posX:int, posY:int):void
         {
-            var _local5:*;
+			var te:Texture = Core.texturesManager.getTexture(dic[borderType]);
+			_image.width = te.width;
+			_image.height = te.height;
+			_image.texture = te;
             _arg2.addChild(this);
-            for (_local5 in this.resDict)
-            {
-                this.resDict[_local5].visible = false;
-            }
-            this.x = _arg3;
-            this.y = _arg4;
-            this.resDict[_arg1].visible = true;
+            x = posX;
+            y = posY;
         }
 
 
     }
-}//package com.popchan.sugar.modules.game.view
+}

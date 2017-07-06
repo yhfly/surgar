@@ -18,146 +18,146 @@ package com.popchan.framework.manager
 
         public function Stage3DManager()
         {
-            this._canvas = new Sprite();
-            this._canvasRect = new Rectangle();
+            _canvas = new Sprite();
+            _canvasRect = new Rectangle();
             super();
         }
 
-        public function setup(_arg1:Stage, _arg2:Rectangle=null):void
+        public function setup(stage:Stage, rect:Rectangle=null):void
         {
-            this._stage = _arg1;
-            if (((Starling.current) && (Starling.current.stage)))
+            _stage = stage;
+            if (Starling.current && Starling.current.stage)
             {
-                Starling.current.stage.addChildAt(this._canvas, 0);
-                Starling.current.stage.addEventListener(Event.RESIZE, this.resize);
-                if (_arg2)
+                Starling.current.stage.addChildAt(_canvas, 0);
+                Starling.current.stage.addEventListener(Event.RESIZE, resize);
+                if (rect)
                 {
-                    this._resizeRect = _arg2;
+                    _resizeRect = rect;
                 }
-                this.resize();
+                resize();
             }
         }
 
-        private function onResize(_arg1:Event):void
+        private function onResize(event:Event):void
         {
-            this.resize();
+            resize();
         }
 
         private function resize():void
         {
-            var _local1:int;
-            var _local2:int;
-            if (this.stageWidth >= this._resizeRect.width)
+            var width:int;
+            var heigh:int;
+            if (stageWidth >= _resizeRect.width)
             {
-                _local1 = this._resizeRect.width;
+                width = _resizeRect.width;
             }
             else
             {
-                if (this.stageWidth <= this._resizeRect.x)
+                if (stageWidth <= _resizeRect.x)
                 {
-                    _local1 = this._resizeRect.x;
+                    width = _resizeRect.x;
                 }
                 else
                 {
-                    _local1 = this.stageWidth;
+                    width = stageWidth;
                 }
             }
-            if (this.stageHeight >= this._resizeRect.height)
+            if (stageHeight >= _resizeRect.height)
             {
-                _local2 = this._resizeRect.height;
+                heigh = _resizeRect.height;
             }
             else
             {
-                if (this.stageHeight <= this._resizeRect.y)
+                if (stageHeight <= _resizeRect.y)
                 {
-                    _local2 = this._resizeRect.y;
+                    heigh = _resizeRect.y;
                 }
                 else
                 {
-                    _local2 = this.stageHeight;
+                    heigh = stageHeight;
                 }
             }
-            if (this._canvasRect.width != _local1)
+            if (_canvasRect.width != width)
             {
-                this._canvasRect.width = _local1;
+                _canvasRect.width = width;
             }
-            if (this._canvasRect.height != _local2)
+            if (_canvasRect.height != heigh)
             {
-                this._canvasRect.height = _local2;
+                _canvasRect.height = heigh;
             }
-            if (this.stageWidth > _local1)
+            if (stageWidth > width)
             {
-                this._canvasRect.x = ((this.stageWidth - _local1) >> 1);
-            }
-            else
-            {
-                this._canvasRect.x = 0;
-            }
-            if (this.stageHeight > _local2)
-            {
-                this._canvasRect.y = ((this.stageHeight - _local2) >> 1);
+                _canvasRect.x = ((stageWidth - width) >> 1);
             }
             else
             {
-                this._canvasRect.y = 0;
+                _canvasRect.x = 0;
             }
-            Starling.current.viewPort.x = this._canvasRect.x;
-            Starling.current.viewPort.y = this._canvasRect.y;
+            if (stageHeight > heigh)
+            {
+                _canvasRect.y = ((stageHeight - heigh) >> 1);
+            }
+            else
+            {
+                _canvasRect.y = 0;
+            }
+            Starling.current.viewPort.x = _canvasRect.x;
+            Starling.current.viewPort.y = _canvasRect.y;
             Starling.current.viewPort.width = Core.stage3DManager.canvasWidth;
             Starling.current.viewPort.height = Core.stage3DManager.canvasHeight;
             Starling.current.stage.stageWidth = Starling.current.viewPort.width;
             Starling.current.stage.stageHeight = Starling.current.viewPort.height;
             Debug.log("Starling.current.stage.width；", Starling.current.stage.width);
             Debug.log("Starling.current.stage.width；", Starling.current.stage.height);
-            Debug.log("Starling.current.stage.x", Starling.current.stage.x, this._canvas.x, this._canvas.width);
-            Debug.log("Starling.current.stage.y", Starling.current.stage.y, this._canvas.y, this._canvas.height);
+            Debug.log("Starling.current.stage.x", Starling.current.stage.x, _canvas.x, _canvas.width);
+            Debug.log("Starling.current.stage.y", Starling.current.stage.y, _canvas.y, _canvas.height);
         }
 
         public function get stage():Stage
         {
-            return (this._stage);
+            return _stage;
         }
 
         public function get stageWidth():int
         {
-            return (this._stage.stageWidth);
+            return _stage.stageWidth;
         }
 
         public function get stageHeight():int
         {
-            return (this._stage.stageHeight);
+            return _stage.stageHeight;
         }
 
         public function get canvas():Sprite
         {
-            return (this._canvas);
+            return _canvas;
         }
 
         public function get canvasRect():Rectangle
         {
-            return (this._canvasRect);
+            return (_canvasRect);
         }
 
         public function get canvasX():Number
         {
-            return (this._canvasRect.x);
+            return (_canvasRect.x);
         }
 
         public function get canvasY():Number
         {
-            return (this._canvasRect.y);
+            return (_canvasRect.y);
         }
 
         public function get canvasWidth():Number
         {
-            return (this._canvasRect.width);
+            return (_canvasRect.width);
         }
 
         public function get canvasHeight():Number
         {
-            return (this._canvasRect.height);
+            return (_canvasRect.height);
         }
 
 
     }
-}//package com.popchan.framework.manager
+} 

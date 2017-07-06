@@ -1,5 +1,5 @@
 ﻿
-package com.popchan.sugar.modules.game.view
+package com.popchan.sugar.modules.game.view.tip
 {
     import starling.display.Sprite;
     import com.popchan.framework.utils.ToolKit;
@@ -7,6 +7,11 @@ package com.popchan.sugar.modules.game.view
     import com.popchan.framework.manager.SoundManager;
     import caurina.transitions.Tweener;
 
+	/**
+	 * 没有可交换的了 
+	 * @author admin
+	 * 
+	 */	
     public class NoSwapTip extends Sprite 
     {
 
@@ -29,26 +34,29 @@ package com.popchan.sugar.modules.game.view
                 "x":(Core.stage3DManager.canvasWidth >> 1),
                 "time":0.4,
                 "transition":"easeOutBack",
-                "onComplete":function ():void
-                {
-                    Tweener.addTween(ins, {
-                        "x":-100,
-                        "time":0.4,
-                        "delay":0.4,
-                        "transition":"easeInBack",
-                        "onComplete":function ():void
-                        {
-                            ins.removeFromParent(true);
-                            if (end != null)
-                            {
-                                end();
-                            }
-                        }
-                    });
-                }
+                "onComplete":omComplete
             });
         }
 
+		private function omComplete():void
+		{
+			Tweener.addTween(this, {
+				"x":-100,
+				"time":0.4,
+				"delay":0.4,
+				"transition":"easeInBack",
+				"onComplete":onAllComplete
+			});
+		}
+		
+		private function onAllComplete():void
+		{
+			removeFromParent(true);
+			if (end != null)
+			{
+				end();
+			}
+		}
 
     }
-}//package com.popchan.sugar.modules.game.view
+} 
